@@ -1,0 +1,85 @@
+backend:
+  name: git-gateway
+  branch: main
+
+locale: fr
+media_folder: assets/galerie
+public_folder: assets/galerie
+
+# Les photos sont converties automatiquement à la bonne taille par le navigateur.
+# Déposez simplement la photo recadrée (sans l'interface Instagram).
+
+collections:
+  - name: galerie
+    label: Réalisations
+    files:
+      - file: data/realisations.json
+        name: realisations
+        label: Galerie des réalisations
+        description: >-
+          Ajoutez, modifiez ou réorganisez vos réalisations.
+          Elles apparaissent sur le site dans l'ordre de cette liste.
+        fields:
+          - name: realisations
+            label: Réalisations
+            label_singular: réalisation
+            widget: list
+            summary: '{{fields.marque}} — {{fields.titre}}'
+            collapsed: true
+            fields:
+              - name: photo
+                label: Photo
+                widget: image
+                hint: Photo de l'habitacle, sans l'interface Instagram. Format vertical de préférence.
+
+              - name: marque
+                label: Marque affichée
+                widget: string
+                hint: Ce qui s'affiche sur la photo. Exemple - Mercedes, Lamborghini, Opel.
+
+              - name: titre
+                label: Modèle et prestation
+                widget: string
+                hint: Exemple - GLC 2019 · Retrofit intérieur complet
+
+              - name: filtre
+                label: Marque pour le filtre
+                widget: select
+                default: autres
+                options:
+                  - { label: Mercedes, value: mercedes }
+                  - { label: Audi, value: audi }
+                  - { label: BMW, value: bmw }
+                  - { label: Porsche, value: porsche }
+                  - { label: Volkswagen, value: volkswagen }
+                  - { label: Autres marques, value: autres }
+
+              - name: prestations
+                label: Prestations réalisées
+                widget: select
+                multiple: true
+                default: [ambiance]
+                options:
+                  - { label: Éclairage d'ambiance, value: ambiance }
+                  - { label: CarPlay et écrans, value: carplay }
+                  - { label: Compteur numérique, value: compteur }
+
+              - name: alt
+                label: Description de la photo
+                widget: string
+                hint: >-
+                  Lue par Google et par les lecteurs d'écran. Décrivez ce qu'on voit,
+                  avec la marque, le modèle et la prestation.
+
+              - name: format
+                label: Taille dans la mosaïque
+                widget: select
+                default: normal
+                options:
+                  - { label: Normale, value: normal }
+                  - { label: Large (double largeur), value: large }
+                  - { label: Mise en avant (grande tuile), value: vedette }
+                hint: >-
+                  Gardez une seule mise en avant. Pour que la mosaïque tombe juste,
+                  visez - 4 points pour la mise en avant, 2 par large, 1 par normale,
+                  et un total divisible par 3.

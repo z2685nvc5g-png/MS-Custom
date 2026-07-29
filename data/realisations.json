@@ -1,0 +1,185 @@
+{
+  "realisations": [
+    {
+      "photo": "assets/galerie/lamborghini-urus.webp",
+      "marque": "Lamborghini",
+      "titre": "Urus · Éclairage d'ambiance LED intégral",
+      "filtre": "autres",
+      "prestations": [
+        "ambiance"
+      ],
+      "alt": "Lamborghini Urus : éclairage d'ambiance LED sur le tableau de bord, les portes avant et les portières arrière",
+      "format": "vedette"
+    },
+    {
+      "photo": "assets/galerie/mercedes-glc.webp",
+      "marque": "Mercedes",
+      "titre": "GLC 2019 · Retrofit intérieur complet",
+      "filtre": "mercedes",
+      "prestations": [
+        "ambiance",
+        "carplay",
+        "compteur"
+      ],
+      "alt": "Mercedes GLC 2019 : éclairage d'ambiance bleu, compteur numérique et écran multimédia installés par MS Custom",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/porsche-macan.webp",
+      "marque": "Porsche",
+      "titre": "Macan Turbo · Retrofit double écran",
+      "filtre": "porsche",
+      "prestations": [
+        "carplay"
+      ],
+      "alt": "Porsche Macan Turbo équipée d'un double écran nouvelle génération avec CarPlay sans fil",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/vw-golf7r.webp",
+      "marque": "Volkswagen",
+      "titre": "Golf 7 R · CarPlay sur écran d'origine",
+      "filtre": "volkswagen",
+      "prestations": [
+        "carplay"
+      ],
+      "alt": "Volkswagen Golf 7 R : CarPlay et Android Auto sans fil intégrés à l'écran d'origine, sans modifier la planche de bord",
+      "format": "large"
+    },
+    {
+      "photo": "assets/galerie/audi-a3.webp",
+      "marque": "Audi",
+      "titre": "A3 · Éclairage d'ambiance intérieur",
+      "filtre": "audi",
+      "prestations": [
+        "ambiance"
+      ],
+      "alt": "Audi A3 : éclairage d'ambiance bleu sur la planche de bord, la console centrale et les planchers",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/bmw-x6.webp",
+      "marque": "BMW",
+      "titre": "X6 E71 · Transformation intérieure",
+      "filtre": "bmw",
+      "prestations": [
+        "ambiance",
+        "carplay",
+        "compteur"
+      ],
+      "alt": "BMW X6 E71 : éclairage d'ambiance, compteur numérique et écran central CarPlay installés par MS Custom",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/mercedes-gla.webp",
+      "marque": "Mercedes",
+      "titre": "GLA · Retrofit multimédia & ambiance",
+      "filtre": "mercedes",
+      "prestations": [
+        "ambiance",
+        "carplay"
+      ],
+      "alt": "Mercedes GLA : écran CarPlay intégré à la planche de bord et éclairage d'ambiance rouge",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/bmw-x1.webp",
+      "marque": "BMW",
+      "titre": "X1 F48 · CarPlay & Android Auto sans fil",
+      "filtre": "bmw",
+      "prestations": [
+        "carplay"
+      ],
+      "alt": "BMW X1 F48 : CarPlay et Android Auto sans fil ajoutés sur l'écran d'origine, commandes au volant conservées",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/audi-a1.webp",
+      "marque": "Audi",
+      "titre": "A1 · Éclairage d'ambiance intérieur",
+      "filtre": "audi",
+      "prestations": [
+        "ambiance"
+      ],
+      "alt": "Audi A1 : tableau de bord rétroéclairé, éclairage des portières et des planchers",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/mercedes-classe-a-w177.webp",
+      "marque": "Mercedes",
+      "titre": "Classe A W177 · Ambiance OEM",
+      "filtre": "mercedes",
+      "prestations": [
+        "ambiance"
+      ],
+      "alt": "Mercedes Classe A W177 : éclairage d'ambiance d'origine activé, aérateurs et console rétroéclairés",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/vw-polo.webp",
+      "marque": "Volkswagen",
+      "titre": "Polo 6 · Éclairage d'ambiance intérieur",
+      "filtre": "volkswagen",
+      "prestations": [
+        "ambiance"
+      ],
+      "alt": "Volkswagen Polo 6 : éclairage d'ambiance rouge intégré à la planche de bord",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/mercedes-cla.webp",
+      "marque": "Mercedes",
+      "titre": "CLA · Éclairage d'ambiance intérieur",
+      "filtre": "mercedes",
+      "prestations": [
+        "ambiance"
+      ],
+      "alt": "Mercedes CLA : éclairage d'ambiance violet sur la planche de bord et les aérateurs",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/mercedes-slk.webp",
+      "marque": "Mercedes",
+      "titre": "SLK · Éclairage d'ambiance intérieur",
+      "filtre": "mercedes",
+      "prestations": [
+        "ambiance"
+      ],
+      "alt": "Mercedes SLK : éclairage d'ambiance bleu sur la console, les contre-portes et les planchers",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/opel-mokka.webp",
+      "marque": "Opel",
+      "titre": "Mokka · Éclairage d'ambiance intérieur",
+      "filtre": "autres",
+      "prestations": [
+        "ambiance"
+      ],
+      "alt": "Opel Mokka : éclairage d'ambiance vert sur la console centrale et les contre-portes",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/mercedes-glc-ambiance.webp",
+      "marque": "Mercedes",
+      "titre": "GLC · Éclairage d'ambiance rouge",
+      "filtre": "mercedes",
+      "prestations": [
+        "ambiance"
+      ],
+      "alt": "Mercedes GLC : liseré d'ambiance rouge courant sur toute la planche de bord et la console",
+      "format": "large"
+    },
+    {
+      "photo": "assets/galerie/mercedes-classe-a.webp",
+      "marque": "Mercedes",
+      "titre": "Classe A · Éclairage d'ambiance intérieur",
+      "filtre": "mercedes",
+      "prestations": [
+        "ambiance"
+      ],
+      "alt": "Mercedes Classe A : éclairage d'ambiance violet sur la planche de bord et les contre-portes",
+      "format": "normal"
+    }
+  ]
+}

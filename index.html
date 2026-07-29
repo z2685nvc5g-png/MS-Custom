@@ -1,0 +1,2122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#050609">
+
+<!-- ============================================================
+     SEO
+     Remplacez le domaine par le vôtre une fois en ligne.
+     ============================================================ -->
+<title>MS Custom — Éclairage d'ambiance &amp; CarPlay auto | Doubs (25)</title>
+<meta name="description" content="Éclairage d'ambiance LED, CarPlay &amp; Android Auto, écrans et compteurs numériques. Atelier près de Besançon (25), noté 5/5 sur 51 avis. Devis gratuit.">
+<link rel="canonical" href="https://mscustom25.fr/">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="MS Custom">
+<meta property="og:title" content="MS Custom — Éclairage d'ambiance &amp; CarPlay auto">
+<meta property="og:description" content="Modernisez votre véhicule comme s'il était sorti d'usine. Éclairage d'ambiance, CarPlay, écrans Android et compteurs numériques. Atelier dans le Doubs.">
+<meta property="og:url" content="https://mscustom25.fr/">
+<meta property="og:image" content="https://mscustom25.fr/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<!-- Polices : Archivo (variable, display) + Inter Tight (texte) -->
+<link rel="preload" as="image" href="assets/hero.webp" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..800&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Données structurées : fiche établissement locale -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "MS Custom",
+  "description": "Retrofit automobile haut de gamme : éclairage d'ambiance LED, CarPlay & Android Auto, écrans Android et compteurs numériques, intégrés avec un rendu proche de l'origine.",
+  "url": "https://mscustom25.fr/",
+  "image": "https://mscustom25.fr/assets/og.jpg",
+  "priceRange": "€€",
+  "telephone": "+33623223095",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "51",
+    "bestRating": "5"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2 rue du Seut",
+    "addressLocality": "Vercel-Villedieu-le-Camp",
+    "postalCode": "25530",
+    "addressRegion": "Bourgogne-Franche-Comté",
+    "addressCountry": "FR"
+  },
+  "areaServed": ["Doubs", "Besançon", "Franche-Comté"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Prestations MS Custom",
+    "itemListElement": [
+      { "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": "Éclairage d'ambiance LED" },
+        "priceSpecification": { "@type": "PriceSpecification", "minPrice": 270, "priceCurrency": "EUR", "valueAddedTaxIncluded": true } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "CarPlay & Android Auto" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Écrans Android" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Compteurs numériques" } }
+    ]
+  },
+  "sameAs": ["https://www.instagram.com/mscustom25"],
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "09:00", "closes": "19:00"
+  }]
+}
+</script>
+
+<style>
+/* ============================================================
+   1. TOKENS
+   Toute l'identité visuelle tient dans ces variables.
+   ============================================================ */
+:root{
+  /* Couleurs */
+  --noir:        #05070E;
+  --anthracite:  #0C0F1A;
+  --surface:     #141826;
+  --surface-2:   #1B2030;
+  --ligne:       rgba(255,255,255,.08);
+  --gris:        #8B929F;
+  --gris-clair:  #C3C8D1;
+  --blanc:       #F4F6F9;
+
+  --bleu:        #2F8BFF;   /* bleu néon du « MS » */
+  --violet:      #7C4DE8;   /* transition du disque */
+  --rose:        #E85CD2;   /* rose néon du « CUSTOM » */
+  --seam: linear-gradient(90deg, var(--bleu) 0%, var(--violet) 52%, var(--rose) 100%);
+  --seam-soft: linear-gradient(90deg, rgba(47,139,255,0) 0%, rgba(47,139,255,.9) 20%, rgba(124,77,232,.9) 55%, rgba(232,92,210,.9) 82%, rgba(232,92,210,0) 100%);
+
+  /* Typographie */
+  --display: 'Archivo', system-ui, sans-serif;
+  --texte: 'Inter Tight', system-ui, -apple-system, sans-serif;
+
+  --t-hero: clamp(2.6rem, 6.4vw, 5.6rem);
+  --t-h2:   clamp(2rem, 3.9vw, 3.3rem);
+  --t-h3:   clamp(1.15rem, 1.5vw, 1.35rem);
+  --t-body: clamp(1rem, 1.05vw, 1.075rem);
+  --t-label: .715rem;
+
+  /* Structure */
+  --max: 1280px;
+  --gouttiere: clamp(20px, 5vw, 64px);
+  --section: clamp(88px, 10vw, 148px);
+  --r: 14px;
+  --ease: cubic-bezier(.22,.8,.28,1);
+}
+
+/* ============================================================
+   2. BASE
+   ============================================================ */
+*,*::before,*::after{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
+body{
+  margin:0;
+  background:var(--noir);
+  color:var(--blanc);
+  font-family:var(--texte);
+  font-size:var(--t-body);
+  line-height:1.65;
+  font-weight:400;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{ max-width:100%; display:block; }
+a{ color:inherit; text-decoration:none; }
+button,input,select,textarea{ font:inherit; color:inherit; }
+h1,h2,h3,h4{ font-family:var(--display); margin:0; line-height:1.02; letter-spacing:-.025em; }
+p{ margin:0; }
+::selection{ background:var(--violet); color:#fff; }
+
+:focus-visible{ outline:2px solid var(--bleu); outline-offset:3px; border-radius:4px; }
+
+/* Voile de lumière qui dérive lentement derrière toute la page */
+.aurore{
+  position:fixed; inset:-25%; z-index:-5; pointer-events:none;
+  background:
+    radial-gradient(38% 38% at 24% 28%, rgba(47,139,255,.16), transparent 62%),
+    radial-gradient(34% 34% at 78% 58%, rgba(232,92,210,.11), transparent 62%),
+    radial-gradient(42% 42% at 52% 88%, rgba(124,77,232,.13), transparent 64%);
+  animation:derive 40s ease-in-out infinite alternate;
+  will-change:transform;
+}
+@keyframes derive{
+  from{ transform:translate3d(-2%,-1%,0) scale(1); }
+  to  { transform:translate3d(3%,2%,0) scale(1.1); }
+}
+
+.wrap{ width:100%; max-width:var(--max); margin-inline:auto; padding-inline:var(--gouttiere); }
+.section{ padding-block:var(--section); position:relative; }
+
+.skip{
+  position:absolute; left:-9999px; top:12px; z-index:200;
+  background:var(--blanc); color:var(--noir); padding:10px 18px; border-radius:8px;
+}
+.skip:focus{ left:12px; }
+
+/* Étiquette de section */
+.label{
+  font-family:var(--display);
+  font-size:var(--t-label);
+  font-weight:600;
+  font-stretch:112%;
+  letter-spacing:.28em;
+  text-transform:uppercase;
+  color:var(--gris);
+  display:flex; align-items:center; gap:14px;
+  margin-bottom:26px;
+}
+.label::before{
+  content:""; width:34px; height:2px; border-radius:2px; background:var(--seam);
+  flex:none;
+}
+
+.titre{
+  font-size:var(--t-h2);
+  font-weight:700;
+  font-stretch:110%;
+  max-width:19ch;
+}
+.chapo{
+  color:var(--gris-clair);
+  max-width:56ch;
+  margin-top:22px;
+}
+.tete{ margin-bottom:clamp(44px,5vw,72px); }
+
+/* Signature : le liseré lumineux (rappel des bandeaux LED) */
+.seam{
+  height:1px; width:100%;
+  background:var(--seam-soft);
+  opacity:.55;
+  position:relative;
+}
+.seam::after{
+  content:""; position:absolute; inset:-14px 0 auto; height:28px;
+  background:var(--seam-soft); filter:blur(14px); opacity:.42;
+}
+
+/* ============================================================
+   3. BOUTONS
+   ============================================================ */
+.btn{
+  --bg:transparent; --fg:var(--blanc); --bd:rgba(255,255,255,.22);
+  display:inline-flex; align-items:center; justify-content:center; gap:10px;
+  padding:15px 28px;
+  border:1px solid var(--bd); background:var(--bg); color:var(--fg);
+  border-radius:100px; cursor:pointer;
+  font-family:var(--display); font-size:.86rem; font-weight:600; font-stretch:105%;
+  letter-spacing:.04em;
+  transition:transform .45s var(--ease), border-color .45s var(--ease), background .45s var(--ease), box-shadow .45s var(--ease);
+  position:relative; overflow:hidden;
+}
+@media (hover:hover){
+  .btn:hover{ transform:translateY(-2px) scale(1.035); border-color:rgba(255,255,255,.4); }
+}
+.btn--primaire{
+  --fg:#fff; --bd:transparent;
+  background:var(--seam);
+  background-size:180% 100%;
+  box-shadow:0 10px 34px -14px rgba(124,77,232,.85);
+}
+.btn--primaire:hover{
+  background-position:100% 0;
+  box-shadow:0 16px 44px -14px rgba(232,92,210,.9);
+}
+/* Reflet qui balaie le bouton toutes les 5 s */
+.btn--primaire::after{
+  content:""; position:absolute; top:-40%; bottom:-40%; width:32%; left:-45%;
+  background:linear-gradient(100deg, transparent, rgba(255,255,255,.4), transparent);
+  transform:skewX(-18deg);
+  animation:reflet 5s var(--ease) infinite;
+  pointer-events:none;
+}
+@keyframes reflet{ 0%{ left:-45%; } 58%,100%{ left:125%; } }
+.btn svg{ width:15px; height:15px; transition:transform .45s var(--ease); }
+.btn:hover svg{ transform:translateX(4px); }
+
+/* ============================================================
+   4. EN-TÊTE
+   ============================================================ */
+.entete{
+  position:fixed; inset:0 0 auto; z-index:100;
+  transition:background .5s var(--ease), backdrop-filter .5s var(--ease), border-color .5s var(--ease);
+  border-bottom:1px solid transparent;
+}
+.entete.is-fixe{
+  background:rgba(5,6,9,.72);
+  backdrop-filter:saturate(180%) blur(18px);
+  -webkit-backdrop-filter:saturate(180%) blur(18px);
+  border-bottom-color:var(--ligne);
+}
+.entete__in{
+  display:flex; align-items:center; justify-content:space-between;
+  height:74px;
+}
+.logo{
+  font-family:var(--display); font-weight:800; font-stretch:120%;
+  font-size:1.06rem; letter-spacing:.02em; text-transform:uppercase;
+  display:flex; align-items:center; gap:11px;
+}
+.logo__mark{
+  width:38px; height:38px; border-radius:50%; flex:none; object-fit:cover;
+  box-shadow:0 0 26px rgba(124,77,232,.45);
+}
+.pied .logo__mark{ width:56px; height:56px; }
+.pied .logo{ font-size:1.2rem; }
+.logo em{ font-style:normal; color:var(--gris); font-weight:600; }
+
+.nav{ display:flex; align-items:center; gap:34px; }
+.nav a{
+  font-size:.875rem; color:var(--gris-clair); position:relative; padding-block:4px;
+  transition:color .3s var(--ease);
+}
+.nav a::after{
+  content:""; position:absolute; left:0; bottom:0; height:1px; width:0;
+  background:var(--seam); transition:width .4s var(--ease);
+}
+.nav a:hover{ color:var(--blanc); }
+.nav a:hover::after{ width:100%; }
+
+.entete .btn{ padding:11px 22px; font-size:.8rem; }
+
+.burger{
+  display:none; width:44px; height:44px; border:1px solid var(--ligne);
+  background:rgba(255,255,255,.03); border-radius:12px; cursor:pointer;
+  align-items:center; justify-content:center; flex-direction:column; gap:5px;
+}
+.burger span{ width:17px; height:1.5px; background:var(--blanc); border-radius:2px; transition:transform .4s var(--ease), opacity .3s; }
+.burger[aria-expanded="true"] span:nth-child(1){ transform:translateY(6.5px) rotate(45deg); }
+.burger[aria-expanded="true"] span:nth-child(2){ opacity:0; }
+.burger[aria-expanded="true"] span:nth-child(3){ transform:translateY(-6.5px) rotate(-45deg); }
+
+/* Barre de progression = liseré lumineux */
+.progres{
+  position:fixed; top:0; left:0; height:2px; width:100%; z-index:101;
+  background:var(--seam); transform:scaleX(0); transform-origin:0 50%;
+  will-change:transform;
+}
+
+/* ============================================================
+   5. HERO
+   ============================================================ */
+.hero{
+  position:relative; min-height:100svh;
+  display:flex; align-items:flex-end;
+  padding-block:140px clamp(56px,8vw,96px);
+  overflow:hidden;
+  isolation:isolate;
+}
+.hero__media{
+  position:absolute; inset:0; z-index:-2;
+  background:
+    radial-gradient(120% 78% at 78% 12%, rgba(47,139,255,.20), transparent 58%),
+    radial-gradient(95% 70% at 12% 88%, rgba(232,92,210,.16), transparent 60%),
+    radial-gradient(70% 55% at 50% 45%, rgba(124,77,232,.13), transparent 70%),
+    linear-gradient(180deg, #0A0C11 0%, #050609 100%);
+}
+.hero__media img{
+  width:100%; height:100%; object-fit:cover; opacity:.62; object-position:50% 42%;
+  filter:contrast(1.08) saturate(.85);
+}
+.hero__voile{
+  position:absolute; inset:0; z-index:-1;
+  background:
+    linear-gradient(180deg, rgba(5,7,14,.82) 0%, rgba(5,7,14,.12) 32%, rgba(5,7,14,.94) 88%),
+    linear-gradient(90deg, rgba(5,7,14,.80) 0%, rgba(5,7,14,.25) 55%, transparent 78%);
+}
+/* Balayage lumineux ambiant */
+.hero__balayage{
+  position:absolute; z-index:-1; left:-30%; top:0; width:60%; height:100%;
+  background:linear-gradient(90deg, transparent, rgba(124,77,232,.09), transparent);
+  filter:blur(30px);
+  animation:balayage 11s var(--ease) infinite;
+}
+@keyframes balayage{ 0%{transform:translateX(0)} 55%,100%{transform:translateX(230%)} }
+
+.hero__in{ position:relative; width:100%; }
+.hero h1{
+  font-size:var(--t-hero);
+  font-weight:700; font-stretch:108%;
+  max-width:17ch;
+  margin-block:26px 0;
+}
+.hero h1 .ligne{ display:block; overflow:hidden; }
+.hero h1 .ligne > span{ display:block; }
+.hero h1 .lueur{
+  background:var(--seam); -webkit-background-clip:text; background-clip:text;
+  color:transparent;
+}
+.hero__sous{
+  color:var(--gris-clair); max-width:46ch; margin-top:26px; font-size:1.075rem;
+}
+.hero__actions{ display:flex; flex-wrap:wrap; gap:14px; margin-top:40px; }
+.hero__pied{
+  display:flex; flex-wrap:wrap; gap:12px 40px; align-items:center;
+  margin-top:clamp(48px,6vw,76px); padding-top:26px;
+  border-top:1px solid var(--ligne);
+  font-size:.8rem; color:var(--gris);
+  font-family:var(--display); font-stretch:105%; letter-spacing:.13em; text-transform:uppercase;
+}
+.hero__pied span{ display:flex; align-items:center; gap:9px; }
+.pastille{ width:5px; height:5px; border-radius:50%; background:var(--bleu); box-shadow:0 0 10px var(--bleu); flex:none; }
+
+/* ============================================================
+   5 bis. BANDEAU DE PREUVE
+   ============================================================ */
+.preuve{ border-bottom:1px solid var(--ligne); background:rgba(255,255,255,.014); }
+.preuve__in{
+  display:grid; grid-template-columns:repeat(3,1fr);
+  padding-block:clamp(26px,3.4vw,40px);
+  gap:clamp(12px,3vw,40px);
+}
+.preuve__bloc{
+  display:flex; flex-direction:column; align-items:center; gap:7px; text-align:center;
+  position:relative;
+  transition:transform .5s var(--ease);
+}
+.preuve__bloc + .preuve__bloc::before{
+  content:""; position:absolute; left:calc(-1 * clamp(6px,1.5vw,20px)); top:12%; bottom:12%;
+  width:1px; background:var(--ligne);
+}
+a.preuve__bloc:hover{ transform:translateY(-3px); }
+.preuve__valeur{
+  display:inline-flex; align-items:center; gap:6px;
+  font-family:var(--display); font-weight:800; font-stretch:112%;
+  font-size:clamp(1.4rem,3.1vw,2.1rem); line-height:1; letter-spacing:-.03em;
+  background:var(--seam); -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+.preuve__valeur svg{ width:.72em; height:.72em; fill:var(--violet); flex:none; }
+.preuve__cle{
+  font-family:var(--display); font-size:clamp(.62rem,1.5vw,.72rem); font-weight:600; font-stretch:110%;
+  letter-spacing:.16em; text-transform:uppercase; color:var(--gris);
+}
+
+/* ============================================================
+   6. PRESTATIONS
+   ============================================================ */
+.grille-presta{
+  position:relative;
+  display:grid; gap:16px;
+  grid-template-columns:repeat(auto-fit, minmax(268px,1fr));
+}
+/* Halo diffus derrière les cartes de prestations */
+.grille-presta::before{
+  content:""; position:absolute; inset:-14% -6%; z-index:-1; pointer-events:none;
+  background:radial-gradient(48% 58% at 50% 42%, rgba(124,77,232,.13), transparent 72%);
+  filter:blur(34px);
+}
+.carte{
+  display:block; color:inherit;
+  position:relative; overflow:hidden;
+  background:linear-gradient(180deg, var(--surface) 0%, var(--anthracite) 100%);
+  border:1px solid var(--ligne);
+  border-radius:var(--r);
+  padding:34px 30px 38px;
+  transition:transform .55s var(--ease), border-color .55s var(--ease), background .55s var(--ease);
+}
+.carte::before{
+  content:""; position:absolute; inset:0 0 auto; height:1px;
+  background:var(--seam); opacity:0; transition:opacity .5s var(--ease);
+}
+.carte::after{
+  content:""; position:absolute; inset:-40px 0 auto; height:70px;
+  background:var(--seam); filter:blur(26px); opacity:0;
+  transition:opacity .55s var(--ease), transform .55s var(--ease);
+}
+.carte:hover{ transform:translateY(-5px); border-color:rgba(255,255,255,.16); }
+.carte:hover::before{ opacity:1; }
+.carte:hover::after{ opacity:.3; transform:translateY(14px); }
+
+.carte__icone{
+  width:46px; height:46px; border-radius:12px;
+  display:grid; place-items:center; margin-bottom:24px;
+  background:rgba(255,255,255,.045);
+  border:1px solid var(--ligne);
+  transition:border-color .5s var(--ease), background .5s var(--ease);
+}
+.carte__icone svg{ width:21px; height:21px; stroke:var(--blanc); fill:none; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; }
+.carte:hover .carte__icone{ border-color:rgba(124,77,232,.5); background:rgba(124,77,232,.10); }
+.carte h3{ font-size:var(--t-h3); font-weight:700; font-stretch:106%; }
+.carte p{ color:var(--gris); font-size:.945rem; margin-top:12px; }
+.carte__voir{
+  display:inline-flex; align-items:center; gap:8px; margin-top:20px;
+  font-family:var(--display); font-size:.76rem; font-weight:600; font-stretch:106%;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--gris);
+  transition:color .45s var(--ease), gap .45s var(--ease);
+}
+.carte__voir svg{ width:13px; height:13px; stroke:currentColor; fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+.carte:hover .carte__voir{ color:var(--blanc); gap:13px; }
+.carte__num{
+  position:absolute; top:26px; right:28px;
+  font-family:var(--display); font-size:.72rem; font-weight:600; font-stretch:118%;
+  letter-spacing:.16em; color:rgba(255,255,255,.16);
+}
+
+/* ============================================================
+   6 bis. TARIFS — packs éclairage d'ambiance
+   ============================================================ */
+.tarifs-grille{
+  position:relative;
+  display:grid; gap:16px;
+  grid-template-columns:repeat(auto-fit, minmax(246px,1fr));
+}
+.tarifs-grille::before{
+  content:""; position:absolute; inset:-14% -6%; z-index:-1; pointer-events:none;
+  background:radial-gradient(46% 60% at 50% 45%, rgba(47,139,255,.11), transparent 72%);
+  filter:blur(34px);
+}
+
+.pack{
+  position:relative; display:flex; flex-direction:column;
+  padding:32px 28px 30px;
+  background:linear-gradient(180deg, var(--surface) 0%, var(--anthracite) 100%);
+  border:1px solid var(--ligne); border-radius:18px;
+  transition:transform .5s var(--ease), border-color .5s var(--ease), box-shadow .5s var(--ease);
+}
+/* Halo bleu/violet, révélé seulement au survol */
+.pack::after{
+  content:""; position:absolute; inset:-1px; border-radius:inherit; z-index:-1;
+  background:var(--seam); filter:blur(18px); opacity:0;
+  transition:opacity .5s var(--ease);
+}
+@media (hover:hover){
+  .pack:hover{
+    transform:translateY(-6px) scale(1.015);
+    border-color:rgba(255,255,255,.16);
+    box-shadow:0 24px 64px -28px rgba(124,77,232,.7);
+  }
+  .pack:hover::after{ opacity:.3; }
+}
+.pack:active{ transform:translateY(-6px) scale(1.015); border-color:rgba(255,255,255,.16); }
+.pack:active::after{ opacity:.3; }
+
+.pack__nom{
+  font-family:var(--display); font-weight:800; font-stretch:114%;
+  font-size:1.02rem; letter-spacing:.03em; text-transform:uppercase;
+}
+.pack__detail{ color:var(--gris); font-size:.92rem; margin-top:11px; flex:1; }
+.pack__prix{
+  font-family:var(--display); font-weight:800; font-stretch:112%;
+  font-size:clamp(2.1rem,4.2vw,2.75rem); line-height:1; letter-spacing:-.035em;
+  margin-top:26px;
+  background:var(--seam); -webkit-background-clip:text; background-clip:text; color:transparent;
+  filter:drop-shadow(0 0 20px rgba(124,77,232,.38));
+}
+.pack__apd{
+  display:block; font-family:var(--texte); font-size:.72rem; font-weight:400;
+  letter-spacing:0; color:var(--gris); margin-top:8px;
+  -webkit-text-fill-color:var(--gris);
+}
+.pack__btn{
+  margin-top:24px; position:relative; overflow:hidden;
+  display:inline-flex; align-items:center; justify-content:center; gap:9px;
+  padding:13px 22px; border-radius:100px; cursor:pointer;
+  border:1px solid rgba(255,255,255,.2); background:rgba(255,255,255,.04); color:var(--blanc);
+  font-family:var(--display); font-size:.78rem; font-weight:600; font-stretch:105%; letter-spacing:.05em;
+  transition:transform .4s var(--ease), border-color .4s var(--ease), background .4s var(--ease);
+}
+/* Lumière qui traverse le bouton en 0,8 s, une seule fois, au survol */
+.pack__btn::after{
+  content:""; position:absolute; top:-40%; bottom:-40%; width:38%; left:-55%;
+  background:linear-gradient(100deg, transparent, rgba(255,255,255,.34), transparent);
+  transform:skewX(-18deg);
+  transition:left .8s var(--ease);
+  pointer-events:none;
+}
+@media (hover:hover){
+  .pack__btn:hover{ transform:scale(1.035); border-color:rgba(255,255,255,.38); background:rgba(255,255,255,.08); }
+  .pack__btn:hover::after{ left:135%; }
+}
+.pack__btn:active::after{ left:135%; }
+
+.pack--phare{ border-color:rgba(124,77,232,.4); }
+.pack--phare::before{
+  content:""; position:absolute; inset:0 0 auto; height:1px; background:var(--seam);
+}
+.pack__marque{
+  position:absolute; top:-9px; left:28px;
+  padding:3px 12px; border-radius:100px;
+  background:var(--seam); color:#fff;
+  font-family:var(--display); font-size:.62rem; font-weight:700; font-stretch:112%;
+  letter-spacing:.16em; text-transform:uppercase;
+}
+
+.tarifs-pied{
+  margin-top:26px; display:flex; flex-wrap:wrap; gap:14px 30px;
+  align-items:baseline; justify-content:space-between;
+  padding-top:24px; border-top:1px solid var(--ligne);
+}
+.tarifs-pied p{ color:var(--gris); font-size:.9rem; max-width:62ch; }
+.tarifs-pied strong{ color:var(--gris-clair); font-weight:500; }
+
+/* Apparition : fondu + montée de 20 px, 0,5 s, décalage de 0,1 s */
+.pack.rev{ transform:translateY(20px); }
+.pack.rev.is-vu{
+  transition:opacity .5s var(--ease), transform .5s var(--ease);
+  transition-delay:var(--d, 0ms);
+}
+
+/* ============================================================
+   7. POURQUOI — liste en colonnes
+   ============================================================ */
+.atouts{
+  display:grid; gap:0;
+  grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+  border-top:1px solid var(--ligne);
+}
+.atout{
+  padding:34px 34px 34px 0;
+  border-bottom:1px solid var(--ligne);
+  display:flex; gap:20px; align-items:flex-start;
+}
+.atout__tick{
+  flex:none; width:30px; height:30px; border-radius:9px; margin-top:2px;
+  display:grid; place-items:center;
+  background:rgba(47,139,255,.10); border:1px solid rgba(47,139,255,.28);
+}
+.atout__tick svg{ width:14px; height:14px; stroke:var(--bleu); fill:none; stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round; }
+.atout h3{ font-size:1.02rem; font-weight:700; font-stretch:104%; }
+.atout p{ color:var(--gris); font-size:.92rem; margin-top:8px; }
+
+/* ============================================================
+   8. GALERIE
+   ============================================================ */
+.filtres{
+  display:flex; flex-wrap:wrap; align-items:center; gap:9px; margin-bottom:30px;
+}
+.filtres__sep{ width:1px; height:20px; background:var(--ligne); margin-inline:5px; }
+.filtre{
+  padding:9px 19px; border-radius:100px; cursor:pointer;
+  background:transparent; border:1px solid var(--ligne); color:var(--gris);
+  font-family:var(--display); font-size:.78rem; font-weight:600; font-stretch:104%;
+  letter-spacing:.07em;
+  transition:color .35s var(--ease), border-color .35s var(--ease), background .35s var(--ease);
+}
+.filtre:hover{ color:var(--blanc); border-color:rgba(255,255,255,.3); }
+.filtre[aria-pressed="true"]{
+  color:#fff; border-color:transparent; background:var(--seam);
+}
+
+.galerie{
+  display:grid; gap:14px;
+  grid-template-columns:repeat(3, 1fr);
+  grid-auto-rows:minmax(238px, 1fr);
+}
+.item{
+  position:relative; overflow:hidden; border-radius:var(--r);
+  border:1px solid var(--ligne);
+  background:var(--surface);
+  transition:opacity .5s var(--ease), transform .5s var(--ease), border-color .5s var(--ease);
+  min-height:232px;
+}
+.item--vedette{ grid-column:span 2; grid-row:span 2; }
+.item--large{ grid-column:span 2; }
+/* Pendant un filtrage, toutes les tuiles reprennent la même taille : pas de trou dans la grille */
+.galerie.est-filtree .item--vedette,
+.galerie.est-filtree .item--large{ grid-column:span 1; grid-row:span 1; }
+.item__fond{ position:absolute; inset:0; }
+.item img{
+  position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
+  object-position:50% 46%;
+  transition:transform 1.1s var(--ease), opacity .6s var(--ease);
+}
+.item:hover img{ transform:scale(1.07); }
+.item__voile{
+  position:absolute; inset:0;
+  background:linear-gradient(180deg, rgba(5,6,9,0) 30%, rgba(5,6,9,.9) 100%);
+}
+.item__txt{
+  position:absolute; inset:auto 0 0; padding:22px 24px;
+  transform:translateY(6px); opacity:.92;
+  transition:transform .5s var(--ease), opacity .5s var(--ease);
+}
+.item:hover .item__txt{ transform:translateY(0); opacity:1; }
+.item__marque{
+  font-family:var(--display); font-size:.68rem; font-weight:600; font-stretch:116%;
+  letter-spacing:.24em; text-transform:uppercase; color:var(--gris-clair);
+}
+.item__titre{ font-family:var(--display); font-size:1.02rem; font-weight:700; font-stretch:104%; margin-top:6px; }
+.item::after{
+  content:""; position:absolute; inset:auto 0 0; height:2px;
+  background:var(--seam); transform:scaleX(0); transform-origin:0 50%;
+  transition:transform .6s var(--ease);
+}
+.item:hover::after{ transform:scaleX(1); }
+.item.is-masque{ display:none; }
+
+/* Dégradés d'ambiance par défaut (visibles tant qu'aucune photo n'est fournie) */
+.amb-1{ background:radial-gradient(120% 100% at 20% 20%, #1E2A52, #0B0D14 70%); }
+.amb-2{ background:radial-gradient(120% 100% at 80% 10%, #3A1E48, #0B0D14 72%); }
+.amb-3{ background:radial-gradient(120% 100% at 50% 90%, #4A1B39, #0B0D14 70%); }
+.amb-4{ background:radial-gradient(120% 100% at 10% 60%, #14314F, #0B0D14 72%); }
+.amb-5{ background:radial-gradient(120% 100% at 70% 70%, #2C2452, #0B0D14 70%); }
+.amb-6{ background:radial-gradient(120% 100% at 30% 30%, #401F31, #0B0D14 72%); }
+
+/* ============================================================
+   9. AVIS
+   ============================================================ */
+.avis-tete{
+  display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:32px;
+  margin-bottom:clamp(40px,5vw,64px);
+}
+a.note:hover{ transform:translateY(-3px); border-color:rgba(124,77,232,.45); }
+.note{
+  display:flex; align-items:center; gap:18px;
+  border:1px solid var(--ligne); border-radius:var(--r);
+  padding:20px 26px; background:var(--anthracite);
+  transition:transform .5s var(--ease), border-color .5s var(--ease);
+}
+.note__chiffre{
+  font-family:var(--display); font-size:2.5rem; font-weight:800; font-stretch:112%;
+  line-height:1; letter-spacing:-.03em;
+  background:var(--seam); -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+.etoiles{ display:flex; gap:3px; }
+.etoiles svg{ width:14px; height:14px; fill:var(--violet); }
+.note small{ display:block; color:var(--gris); font-size:.8rem; margin-top:5px; }
+
+.avis-grille{
+  position:relative;
+  display:grid; gap:16px;
+  grid-template-columns:repeat(auto-fit, minmax(288px,1fr));
+}
+.avis-grille::before{
+  content:""; position:absolute; inset:-16% -6%; z-index:-1; pointer-events:none;
+  background:radial-gradient(46% 56% at 50% 50%, rgba(47,139,255,.11), transparent 72%);
+  filter:blur(36px);
+}
+.avis{
+  border:1px solid var(--ligne); border-radius:var(--r);
+  background:linear-gradient(180deg, var(--surface), var(--anthracite));
+  padding:30px;
+  display:flex; flex-direction:column; justify-content:space-between; gap:24px;
+}
+.avis p{ color:var(--gris-clair); font-size:.96rem; }
+.avis footer{ display:flex; align-items:center; gap:13px; }
+.avis__pastille{
+  width:36px; height:36px; border-radius:50%; flex:none;
+  display:grid; place-items:center;
+  font-family:var(--display); font-size:.8rem; font-weight:700;
+  background:rgba(255,255,255,.06); border:1px solid var(--ligne);
+}
+.avis__nom{ font-family:var(--display); font-weight:700; font-size:.92rem; font-stretch:104%; }
+.avis__veh{ color:var(--gris); font-size:.8rem; }
+
+/* ============================================================
+   10. MÉTHODE — vraie séquence, la numérotation porte du sens
+   ============================================================ */
+.etapes{ position:relative; display:grid; gap:0; }
+.etape{
+  display:grid; grid-template-columns:88px 1fr; gap:clamp(20px,4vw,52px);
+  padding-block:34px;
+  border-bottom:1px solid var(--ligne);
+  align-items:start;
+}
+.etape:first-child{ border-top:1px solid var(--ligne); }
+.etape__num{
+  font-family:var(--display); font-size:clamp(2rem,4vw,2.9rem); font-weight:800; font-stretch:118%;
+  line-height:.9; letter-spacing:-.04em;
+  color:transparent; -webkit-text-stroke:1px rgba(255,255,255,.22);
+  transition:-webkit-text-stroke-color .6s var(--ease), color .6s var(--ease);
+}
+.etape:hover .etape__num{ -webkit-text-stroke-color:transparent; background:var(--seam); -webkit-background-clip:text; background-clip:text; }
+.etape h3{ font-size:clamp(1.2rem,2vw,1.55rem); font-weight:700; font-stretch:106%; }
+.etape p{ color:var(--gris); margin-top:10px; max-width:62ch; font-size:.96rem; }
+
+/* ============================================================
+   11. FAQ
+   ============================================================ */
+.faq{ border-top:1px solid var(--ligne); }
+.qa{ border-bottom:1px solid var(--ligne); }
+.qa__q{
+  width:100%; background:none; border:0; cursor:pointer;
+  display:flex; align-items:center; justify-content:space-between; gap:24px;
+  padding:26px 0; text-align:left;
+  font-family:var(--display); font-size:clamp(1rem,1.5vw,1.12rem); font-weight:600; font-stretch:104%;
+  transition:color .35s var(--ease);
+}
+.qa__q:hover{ color:var(--gris-clair); }
+.qa__plus{
+  flex:none; width:28px; height:28px; border-radius:50%; border:1px solid var(--ligne);
+  display:grid; place-items:center; position:relative;
+  transition:border-color .4s var(--ease), background .4s var(--ease);
+}
+.qa__plus::before,.qa__plus::after{
+  content:""; position:absolute; background:var(--blanc); border-radius:2px;
+  transition:transform .4s var(--ease), opacity .3s;
+}
+.qa__plus::before{ width:11px; height:1.5px; }
+.qa__plus::after{ width:1.5px; height:11px; }
+.qa[open] .qa__plus{ border-color:transparent; background:var(--seam); }
+.qa[open] .qa__plus::after{ transform:rotate(90deg); opacity:0; }
+.qa__r{ overflow:hidden; }
+.qa__r p{ color:var(--gris); padding-bottom:28px; max-width:76ch; font-size:.96rem; }
+
+/* ============================================================
+   12. CONTACT
+   ============================================================ */
+.contact{
+  display:grid; gap:clamp(32px,4vw,64px);
+  grid-template-columns:1.15fr .85fr;
+  align-items:start;
+}
+.form{
+  display:grid; gap:16px;
+  grid-template-columns:1fr 1fr;
+}
+.champ{ display:flex; flex-direction:column; gap:9px; }
+.champ--plein{ grid-column:1 / -1; }
+.champ label{
+  font-family:var(--display); font-size:.72rem; font-weight:600; font-stretch:110%;
+  letter-spacing:.18em; text-transform:uppercase; color:var(--gris);
+}
+.champ input,.champ textarea,.champ select{
+  background:var(--anthracite);
+  border:1px solid var(--ligne); border-radius:10px;
+  padding:14px 16px; width:100%;
+  transition:border-color .35s var(--ease), background .35s var(--ease), box-shadow .35s var(--ease);
+}
+.champ textarea{ resize:vertical; min-height:130px; }
+.champ input:focus,.champ textarea:focus,.champ select:focus{
+  outline:none; border-color:rgba(124,77,232,.7);
+  background:var(--surface);
+  box-shadow:0 0 0 4px rgba(124,77,232,.12);
+}
+.champ input::placeholder,.champ textarea::placeholder{ color:#5C626E; }
+.form__pied{ grid-column:1 / -1; display:flex; flex-wrap:wrap; align-items:center; gap:18px; }
+.form__pied small{ color:var(--gris); font-size:.78rem; max-width:38ch; }
+.cache{ position:absolute; left:-9999px; }
+
+.infos{ display:grid; gap:14px; }
+.info{
+  border:1px solid var(--ligne); border-radius:var(--r);
+  background:linear-gradient(180deg, var(--surface), var(--anthracite));
+  padding:24px 26px;
+  transition:border-color .5s var(--ease), transform .5s var(--ease);
+}
+a.info:hover{ transform:translateY(-3px); border-color:rgba(124,77,232,.45); }
+.info__label{
+  font-family:var(--display); font-size:.7rem; font-weight:600; font-stretch:112%;
+  letter-spacing:.2em; text-transform:uppercase; color:var(--gris); margin-bottom:10px;
+  display:flex; align-items:center; gap:9px;
+}
+.info__label svg{ width:14px; height:14px; stroke:var(--violet); fill:none; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; }
+.info strong{ font-family:var(--display); font-weight:700; font-size:1.02rem; font-stretch:104%; display:block; }
+.info span{ color:var(--gris); font-size:.9rem; display:block; margin-top:5px; }
+
+/* ============================================================
+   12 bis. VISIONNEUSE (clic sur une réalisation)
+   ============================================================ */
+.item__ouvrir{
+  position:absolute; inset:0; z-index:3;
+  background:none; border:0; cursor:zoom-in; padding:0;
+  -webkit-tap-highlight-color:transparent;
+}
+.item__ouvrir:focus-visible{ outline:2px solid var(--bleu); outline-offset:-4px; border-radius:var(--r); }
+
+.visio{
+  position:fixed; inset:0; z-index:200;
+  display:flex; align-items:center; justify-content:center;
+  padding:clamp(16px,4vw,48px);
+  background:rgba(5,7,14,.9);
+  backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px);
+  opacity:0; transition:opacity .35s var(--ease);
+}
+.visio[hidden]{ display:none; }
+.visio.est-ouverte{ opacity:1; }
+.visio__cadre{
+  margin:0; position:relative; max-width:min(560px, 100%); max-height:100%;
+  display:flex; flex-direction:column; gap:16px;
+  transform:scale(.97); transition:transform .45s var(--ease);
+}
+.visio.est-ouverte .visio__cadre{ transform:none; }
+.visio__cadre img{
+  width:100%; max-height:76svh; object-fit:contain;
+  border-radius:var(--r); border:1px solid var(--ligne);
+  box-shadow:0 30px 90px -30px rgba(0,0,0,.9);
+}
+.visio figcaption{ text-align:center; }
+.visio__marque{
+  display:block; font-family:var(--display); font-size:.68rem; font-weight:600; font-stretch:116%;
+  letter-spacing:.24em; text-transform:uppercase; color:var(--gris);
+}
+.visio__titre{ display:block; font-family:var(--display); font-weight:700; font-stretch:104%; margin-top:6px; }
+.visio__compteur{ display:block; color:var(--gris); font-size:.78rem; margin-top:8px; }
+
+.visio button:not(.visio__cadre button){ position:absolute; }
+.visio__nav, .visio__fermer{
+  width:46px; height:46px; border-radius:50%; cursor:pointer;
+  background:rgba(255,255,255,.06); border:1px solid var(--ligne);
+  display:grid; place-items:center; color:var(--blanc);
+  transition:background .35s var(--ease), border-color .35s var(--ease), transform .35s var(--ease);
+}
+.visio__nav:hover, .visio__fermer:hover{ background:rgba(255,255,255,.13); border-color:rgba(255,255,255,.3); transform:scale(1.06); }
+.visio__nav svg, .visio__fermer svg{ width:17px; height:17px; stroke:currentColor; fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+.visio__fermer{ top:clamp(16px,3vw,28px); right:clamp(16px,3vw,28px); }
+.visio__prec{ left:clamp(10px,2vw,28px); top:50%; margin-top:-23px; }
+.visio__suiv{ right:clamp(10px,2vw,28px); top:50%; margin-top:-23px; }
+@media (max-width:640px){
+  .visio__prec{ left:12px; }
+  .visio__suiv{ right:12px; }
+  .visio__cadre img{ max-height:66svh; }
+}
+body.est-bloque{ overflow:hidden; }
+
+/* ============================================================
+   12 ter. CARTE GOOGLE MAPS (chargée au clic, pour ne pas déposer
+   de cookies Google avant que le visiteur ne le demande)
+   ============================================================ */
+.carte-map{
+  grid-column:1 / -1; margin-top:clamp(28px,4vw,44px);
+  position:relative; overflow:hidden;
+  border:1px solid var(--ligne); border-radius:var(--r);
+  min-height:clamp(240px,34vw,360px);
+  background:
+    radial-gradient(70% 90% at 30% 20%, rgba(47,139,255,.14), transparent 65%),
+    radial-gradient(60% 80% at 80% 80%, rgba(232,92,210,.10), transparent 65%),
+    var(--anthracite);
+  display:grid; place-items:center; text-align:center;
+}
+.carte-map__invite{ padding:34px 26px; display:grid; justify-items:center; gap:14px; }
+.carte-map__invite strong{ font-family:var(--display); font-weight:700; font-stretch:106%; font-size:1.05rem; }
+.carte-map__invite span{ color:var(--gris); font-size:.88rem; max-width:40ch; }
+.carte-map iframe{
+  position:absolute; inset:0; width:100%; height:100%; border:0;
+  filter:invert(.92) hue-rotate(185deg) saturate(.75) contrast(.92);
+  opacity:0; transition:opacity .6s var(--ease);
+}
+.carte-map.est-chargee iframe{ opacity:1; }
+.carte-map.est-chargee .carte-map__invite{ display:none; }
+.carte-map__lien{
+  position:absolute; right:14px; bottom:14px; z-index:2;
+  padding:10px 18px; border-radius:100px;
+  background:rgba(5,7,14,.82); border:1px solid var(--ligne);
+  backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+  font-family:var(--display); font-size:.74rem; font-weight:600; letter-spacing:.06em;
+  opacity:0; pointer-events:none; transition:opacity .5s var(--ease);
+}
+.carte-map.est-chargee .carte-map__lien{ opacity:1; pointer-events:auto; }
+
+/* ============================================================
+   13. PIED DE PAGE
+   ============================================================ */
+.pied{ border-top:1px solid var(--ligne); padding-block:56px 34px; background:var(--anthracite); }
+.pied__haut{
+  display:grid; gap:36px;
+  grid-template-columns:1.4fr 1fr 1fr;
+  padding-bottom:40px;
+}
+.pied__haut p{ color:var(--gris); font-size:.92rem; margin-top:16px; max-width:34ch; }
+.pied h4{
+  font-size:.72rem; font-weight:600; font-stretch:112%; letter-spacing:.2em;
+  text-transform:uppercase; color:var(--gris); margin-bottom:16px;
+}
+.pied ul{ list-style:none; margin:0; padding:0; display:grid; gap:11px; }
+.pied ul a{ color:var(--gris-clair); font-size:.92rem; transition:color .3s var(--ease); }
+.pied ul a:hover{ color:var(--blanc); }
+.pied__bas{
+  border-top:1px solid var(--ligne); padding-top:26px;
+  display:flex; flex-wrap:wrap; gap:14px; justify-content:space-between;
+  color:var(--gris); font-size:.8rem;
+}
+
+/* ============================================================
+   13 bis. APPEL À L'ACTION FIXE (mobile)
+   ============================================================ */
+.cta-fixe{
+  position:fixed; left:0; right:0; bottom:0; z-index:90;
+  display:none; align-items:center; gap:10px;
+  padding:11px var(--gouttiere);
+  padding-bottom:calc(11px + env(safe-area-inset-bottom));
+  background:rgba(5,7,14,.88);
+  backdrop-filter:saturate(180%) blur(18px); -webkit-backdrop-filter:saturate(180%) blur(18px);
+  border-top:1px solid var(--ligne);
+  transition:transform .45s var(--ease), opacity .35s var(--ease);
+}
+.cta-fixe .btn{ flex:1; padding:14px 20px; }
+.cta-fixe__tel{
+  flex:none; width:50px; height:50px; border-radius:50%;
+  display:grid; place-items:center;
+  border:1px solid var(--ligne); background:rgba(255,255,255,.05);
+}
+.cta-fixe__tel svg{ width:19px; height:19px; stroke:var(--blanc); fill:none; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; }
+.cta-fixe.est-rangee{ transform:translateY(130%); opacity:0; pointer-events:none; }
+@media (max-width:820px){
+  .cta-fixe{ display:flex; }
+  .pied{ padding-bottom:118px; }
+}
+
+/* ============================================================
+   14. ANIMATIONS D'APPARITION
+   ============================================================ */
+.rev{ opacity:0; transform:translateY(24px); }
+.carte.rev, .item.rev{ transform:translateY(30px); }
+.rev.is-vu{
+  opacity:1; transform:none;
+  transition:opacity .9s var(--ease), transform .9s var(--ease);
+  transition-delay:var(--d, 0ms);
+}
+.hero .ligne > span{ transform:translateY(105%); }
+.hero.is-pret .ligne > span{
+  transform:none;
+  transition:transform 1.1s var(--ease);
+  transition-delay:var(--d, 0ms);
+}
+.hero .fade{ opacity:0; transform:translateY(18px); }
+.hero.is-pret .fade{
+  opacity:1; transform:none;
+  transition:opacity .9s var(--ease), transform .9s var(--ease);
+  transition-delay:var(--d, 0ms);
+}
+
+/* ============================================================
+   15. RESPONSIVE
+   ============================================================ */
+@media (max-width:1000px){
+  .contact{ grid-template-columns:1fr; }
+  .pied__haut{ grid-template-columns:1fr 1fr; }
+  .galerie{ grid-template-columns:repeat(2,1fr); }
+  .item--vedette{ grid-row:span 1; }
+}
+@media (max-width:820px){
+  .burger{ display:flex; }
+  .entete .nav, .entete .btn{ display:none; }
+  .nav{
+    position:fixed; inset:74px 0 auto; flex-direction:column; align-items:stretch; gap:0;
+    background:rgba(5,6,9,.97);
+    backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px);
+    border-bottom:1px solid var(--ligne);
+    padding:8px var(--gouttiere) 26px;
+    transform:translateY(-12px); opacity:0; pointer-events:none;
+    transition:transform .45s var(--ease), opacity .35s var(--ease);
+  }
+  .entete.is-ouvert .nav{ display:flex; transform:none; opacity:1; pointer-events:auto; }
+  .entete.is-ouvert .nav .btn{ display:inline-flex; margin-top:18px; }
+  .nav a{ padding:15px 0; border-bottom:1px solid var(--ligne); font-size:1rem; }
+  .nav a::after{ display:none; }
+  .entete.is-ouvert{ background:rgba(5,6,9,.92); backdrop-filter:blur(18px); }
+}
+@media (max-width:640px){
+  .form{ grid-template-columns:1fr; }
+  .pied__haut{ grid-template-columns:1fr; }
+  .etape{ grid-template-columns:56px 1fr; }
+  .atout{ padding-right:0; }
+  .hero__actions .btn{ flex:1 1 100%; }
+  .avis-tete{ align-items:flex-start; }
+  .galerie{ grid-template-columns:1fr; }
+  .item--vedette, .item--large{ grid-column:span 1; grid-row:span 1; }
+}
+
+/* ============================================================
+   16. ACCESSIBILITÉ — mouvement réduit
+   ============================================================ */
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior:auto; }
+  *,*::before,*::after{
+    animation-duration:.01ms !important; animation-iteration-count:1 !important;
+    transition-duration:.01ms !important;
+  }
+  .rev,.hero .fade{ opacity:1; transform:none; }
+  .carte.rev, .item.rev, .pack.rev{ transform:none; }
+  .pack__btn::after{ display:none; }
+  .hero .ligne > span{ transform:none; }
+  .aurore, .btn--primaire::after, .hero__balayage{ animation:none; }
+  .btn--primaire::after{ display:none; }
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Mon véhicule est-il compatible ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nous intervenons sur toutes les marques. La compatibilité dépend surtout du modèle, de l'année et de l'équipement d'origine, pas du constructeur. Nous avons déjà travaillé sur Mercedes, Audi, BMW, Porsche, Volkswagen, Opel, DS, Lamborghini et bien d'autres. Envoyez-nous le modèle et l'année : la vérification est gratuite."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Combien de temps dure une installation ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un CarPlay ou un compteur numérique se fait généralement dans la journée. Un éclairage d'ambiance complet demande un à plusieurs jours selon le nombre de zones et le démontage nécessaire. La durée exacte figure sur le devis."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Y a-t-il une garantie sur les installations ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le matériel bénéficie de la garantie de son fabricant et la pose est garantie par nos soins. En cas de souci lié à l'installation, le véhicule est repris à l'atelier. Les conditions précises sont indiquées sur votre devis."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Est-ce que cela abîme le véhicule ou son électronique ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non. Nous privilégions les connectiques d'origine et les montages réversibles, avec sauvegarde des paramètres avant toute intervention sur l'électronique. Si une intervention devait être irréversible, elle vous serait signalée avant, et rien ne se fait sans votre accord."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Intervenez-vous à domicile ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non. Toutes les installations sont réalisées uniquement dans notre atelier de Vercel-Villedieu-le-Camp, dans le Doubs. C'est la condition pour travailler avec le bon outillage, à l'abri, et garantir la qualité du montage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment obtenir un devis ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Remplissez le formulaire ci-dessous avec votre véhicule, son année et le projet souhaité. Plus votre description est précise, plus le devis est juste. Vous recevez une réponse chiffrée, sans engagement."
+      }
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+<div class="aurore" aria-hidden="true"></div>
+<a class="skip" href="#principal">Aller au contenu</a>
+<div class="progres" id="progres" aria-hidden="true"></div>
+
+<!-- ============================ EN-TÊTE ============================ -->
+<header class="entete" id="entete">
+  <div class="wrap entete__in">
+    <a class="logo" href="#" aria-label="MS Custom, retour en haut">
+      <img class="logo__mark" src="assets/logo.webp" alt="" width="38" height="38">
+      MS<em>Custom</em>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <a href="#realisations">Réalisations</a>
+      <a href="#prestations">Prestations</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#avis">Avis</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn--primaire" href="#devis">Demander un devis</a>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="principal">
+
+<!-- ============================ HERO ============================ -->
+<section class="hero" id="hero">
+  <div class="hero__media">
+    <!-- Déposez votre visuel dans assets/hero.jpg (idéalement 2400 px de large, habitacle de nuit).
+         Sans photo, le dégradé d'ambiance ci-dessus prend le relais. -->
+    <img src="assets/hero.webp" alt="" fetchpriority="high" data-optionnel>
+  </div>
+  <div class="hero__voile" aria-hidden="true"></div>
+  <div class="hero__balayage" aria-hidden="true"></div>
+
+  <div class="wrap hero__in">
+    <p class="label fade" style="--d:120ms">Éclairage d'ambiance &amp; CarPlay · Doubs</p>
+
+    <h1>
+      <span class="ligne"><span style="--d:200ms">Modernisez votre véhicule</span></span>
+      <span class="ligne"><span style="--d:300ms">comme s'il était</span></span>
+      <span class="ligne"><span class="lueur" style="--d:400ms">sorti d'usine.</span></span>
+    </h1>
+
+    <p class="hero__sous fade" style="--d:560ms">
+      Des installations haut de gamme intégrées avec un rendu proche de l'origine.
+    </p>
+
+    <div class="hero__actions fade" style="--d:660ms">
+      <a class="btn btn--primaire" href="#devis">
+        Demander un devis
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="btn" href="#realisations">Découvrir nos réalisations</a>
+    </div>
+
+    <div class="hero__pied fade" style="--d:780ms">
+      <span><i class="pastille" aria-hidden="true"></i> Atelier à Vercel-Villedieu-le-Camp</span>
+      <span><i class="pastille" aria-hidden="true"></i> Toutes marques</span>
+      <span><i class="pastille" aria-hidden="true"></i> Devis sous 24 à 48 h</span>
+    </div>
+  </div>
+</section>
+
+<div class="seam" aria-hidden="true"></div>
+
+<!-- ============================ PREUVE ============================ -->
+<section class="preuve" aria-label="MS Custom en quelques chiffres">
+  <div class="wrap preuve__in">
+    <a class="preuve__bloc rev" href="https://www.google.com/maps/search/?api=1&amp;query=MS+Custom+Vercel-Villedieu-le-Camp" target="_blank" rel="noopener">
+      <span class="preuve__valeur">5,0<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg></span>
+      <span class="preuve__cle">51 avis Google</span>
+    </a>
+    <div class="preuve__bloc rev" style="--d:80ms">
+      <span class="preuve__valeur">50+</span>
+      <span class="preuve__cle">véhicules modernisés</span>
+    </div>
+    <div class="preuve__bloc rev" style="--d:160ms">
+      <span class="preuve__valeur">24-48 h</span>
+      <span class="preuve__cle">réponse à votre demande</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ GALERIE ============================ -->
+<section class="section" id="realisations">
+  <div class="wrap">
+    <div class="tete rev">
+      <p class="label">Réalisations</p>
+      <h2 class="titre">Des projets livrés, pas des simulations.</h2>
+      <p class="chapo">Toutes marques confondues. Filtrez par prestation ou par marque pour voir ce que nous avons déjà réalisé sur un projet proche du vôtre.</p>
+    </div>
+
+    <div class="filtres rev" role="group" aria-label="Filtrer les réalisations">
+      <button class="filtre" data-champ="tous" data-filtre="tous" aria-pressed="true">Toutes</button>
+      <span class="filtres__sep" aria-hidden="true"></span>
+      <button class="filtre" data-champ="presta" data-filtre="ambiance" aria-pressed="false">Éclairage d'ambiance</button>
+      <button class="filtre" data-champ="presta" data-filtre="carplay" aria-pressed="false">CarPlay &amp; écrans</button>
+      <button class="filtre" data-champ="presta" data-filtre="compteur" aria-pressed="false">Compteurs</button>
+      <span class="filtres__sep" aria-hidden="true"></span>
+      <button class="filtre" data-champ="marque" data-filtre="mercedes" aria-pressed="false">Mercedes</button>
+      <button class="filtre" data-champ="marque" data-filtre="porsche" aria-pressed="false">Porsche</button>
+      <button class="filtre" data-champ="marque" data-filtre="audi" aria-pressed="false">Audi</button>
+      <button class="filtre" data-champ="marque" data-filtre="bmw" aria-pressed="false">BMW</button>
+      <button class="filtre" data-champ="marque" data-filtre="volkswagen" aria-pressed="false">Volkswagen</button>
+      <button class="filtre" data-champ="marque" data-filtre="autres" aria-pressed="false">Autres marques</button>
+    </div>
+
+    <!-- Pour ajouter une réalisation : dupliquez un <article class="item">, changez data-marque,
+         le src de l'image, le alt, la marque et le titre. Le filtre suit automatiquement. -->
+    <div class="galerie" id="galerie">
+
+      <article class="item item--vedette rev" data-marque="autres" data-presta="ambiance">
+        <div class="item__fond amb-1"></div>
+        <img src="assets/galerie/lamborghini-urus.webp" alt="Lamborghini Urus : éclairage d'ambiance LED sur le tableau de bord, les portes avant et les portières arrière" loading="lazy" decoding="async" data-optionnel>
+        <div class="item__voile"></div>
+        <div class="item__txt"><p class="item__marque">Lamborghini</p><p class="item__titre">Urus · Éclairage d'ambiance LED intégral</p></div>
+        <button class="item__ouvrir" type="button" aria-label="Agrandir la photo : Lamborghini Urus · Éclairage d'ambiance LED intégral"></button>
+      </article>
+
+      <article class="item rev" data-marque="mercedes" data-presta="ambiance carplay compteur" style="--d:60ms">
+        <div class="item__fond amb-2"></div>
+        <img src="assets/galerie/mercedes-glc.webp" alt="Mercedes GLC 2019 : éclairage d'ambiance bleu, compteur numérique et écran multimédia installés par MS Custom" loading="lazy" decoding="async" data-optionnel>
+        <div class="item__voile"></div>
+        <div class="item__txt"><p class="item__marque">Mercedes</p><p class="item__titre">GLC 2019 · Retrofit intérieur complet</p></div>
+        <button class="item__ouvrir" type="button" aria-label="Agrandir la photo : Mercedes GLC 2019 · Retrofit intérieur complet"></button>
+      </article>
+
+      <article class="item rev" data-marque="porsche" data-presta="carplay" style="--d:120ms">
+        <div class="item__fond amb-3"></div>
+        <img src="assets/galerie/porsche-macan.webp" alt="Porsche Macan Turbo équipée d'un double écran nouvelle génération avec CarPlay sans fil" loading="lazy" decoding="async" data-optionnel>
+        <div class="item__voile"></div>
+        <div class="item__txt"><p class="item__marque">Porsche</p><p class="item__titre">Macan Turbo · Retrofit double écran</p></div>
+        <button class="item__ouvrir" type="button" aria-label="Agrandir la photo : Porsche Macan Turbo · Retrofit double écran"></button>
+      </article>
+
+      <article class="item item--large rev" data-marque="volkswagen" data-presta="carplay" style="--d:0ms">
+        <div class="item__fond amb-4"></div>
+        <img src="assets/galerie/vw-golf7r.webp" alt="Volkswagen Golf 7 R : CarPlay et Android Auto sans fil intégrés à l'écran d'origine, sans modifier la planche de bord" loading="lazy" decoding="async" data-optionnel>
+        <div class="item__voile"></div>
+        <div class="item__txt"><p class="item__marque">Volkswagen</p><p class="item__titre">Golf 7 R · CarPlay sur écran d'origine</p></div>
+        <button class="item__ouvrir" type="button" aria-label="Agrandir la photo : Volkswagen Golf 7 R · CarPlay sur écran d'origine"></button>
+      </article>
+
+      <article class="item rev" data-marque="audi" data-presta="ambiance" style="--d:60ms">
+        <div class="item__fond amb-5"></div>
+        <img src="assets/galerie/audi-a3.webp" alt="Audi A3 : éclairage d'ambiance bleu sur la planche de bord, la console centrale et les planchers" loading="lazy" decoding="async" data-optionnel>
+        <div class="item__voile"></div>
+        <div class="item__txt"><p class="item__marque">Audi</p><p class="item__titre">A3 · Éclairage d'ambiance intérieur</p></div>
+        <button class="item__ouvrir" type="button" aria-label="Agrandir la photo : Audi A3 · Éclairage d'ambiance intérieur"></button>
+      </article>
+
+      <article class="item rev" data-marque="bmw" data-presta="ambiance carplay compteur" style="--d:120ms">
+        <div class="item__fond amb-6"></div>
+        <img src="assets/galerie/bmw-x6.webp" alt="BMW X6 E71 : éclairage d'ambiance, compteur numérique et écran central CarPlay installés par MS Custom" loading="lazy" decoding="async" data-optionnel>
+        <div class="item__voile"></div>
+        <div class="item__txt"><p class="item__marque">BMW</p><p class="item__titre">X6 E71 · Transformation intérieure</p></div>
+        <button class="item__ouvrir" type="button" aria-label="Agrandir la photo : BMW X6 E71 · Transformation intérieure"></button>
+      </article>
+
+      <article class="item rev" data-marque="mercedes" data-presta="ambiance carplay" style="--d:0ms">
+        <div class="item__fond amb-1"></div>
+        <img src="assets/galerie/mercedes-gla.webp" alt="Mercedes GLA : écran CarPlay intégré à la planche de bord et éclairage d'ambiance rouge" loading="lazy" decoding="async" data-optionnel>
+        <div class="item__voile"></div>
+        <div class="item__txt"><p class="item__marque">Mercedes</p><p class="item__titre">GLA · Retrofit multimédia &amp; ambiance</p></div>
+        <button class="item__ouvrir" type="button" aria-label="Agrandir la photo : Mercedes GLA · Retrofit multimédia &amp; ambiance"></button>
+      </article>
+
+      <article class="item rev" data-marque="bmw" data-presta="carplay" style="--d:60ms">
+        <div class="item__fond amb-2"></div>
+        <img src="assets/galerie/bmw-x1.webp" alt="BMW X1 F48 : CarPlay et Android Auto sans fil ajoutés sur l'écran d'origine, commandes au volant conservées" loading="lazy" decoding="async" data-optionnel>
+        <div class="item__voile"></div>
+        <div class="item__txt"><p class="item__marque">BMW</p><p class="item__titre">X1 F48 · CarPlay &amp; Android Auto sans fil</p></div>
+        <button class="item__ouvrir" type="button" aria-label="Agrandir la photo : BMW X1 F48 · CarPlay &amp; Android Auto sans fil"></button>
+      </article>
+
+      <article class="item rev" data-marque="audi" data-presta="ambiance" style="--d:120ms">
+        <div class="item__fond amb-3"></div>
+        <img src="assets/galerie/audi-a1.webp" alt="Audi A1 : tableau de bord rétroéclairé, éclairage des portières et des planchers" loading="lazy" decoding="async" data-optionnel>
+        <div class="item__voile"></div>
+        <div class="item__txt"><p class="item__marque">Audi</p><p class="item__titre">A1 · Éclairage d'ambiance intérieur</p></div>
+        <button class="item__ouvrir" type="button" aria-label="Agrandir la photo : Audi A1 · Éclairage d'ambiance intérieur"></button>
+      </article>
+
+      <article class="item rev" data-marque="mercedes" data-presta="ambiance" style="--d:0ms">
+        <div class="item__fond amb-4"></div>
+        <img src="assets/galerie/mercedes-classe-a-w177.webp" alt="Mercedes Classe A W177 : éclairage d'ambiance d'origine activé, aérateurs et console rétroéclairés" loading="lazy" decoding="async" data-optionnel>
+        <div class="item__voile"></div>
+        <div class="item__txt"><p class="item__marque">Mercedes</p><p class="item__titre">Classe A W177 · Ambiance OEM</p></div>
+        <button class="item__ouvrir" type="button" aria-label="Agrandir la photo : Mercedes Classe A W177 · Ambiance OEM"></button>
+      </article>
+
+      <article class="item rev" data-marque="volkswagen" data-presta="ambiance" style="--d:60ms">
+        <div class="item__fond amb-5"></div>
+        <img src="assets/galerie/vw-polo.webp" alt="Volkswagen Polo 6 : éclairage d'ambiance rouge intégré à la planche de bord" loading="lazy" decoding="async" data-optionnel>
+        <div class="item__voile"></div>
+        <div class="item__txt"><p class="item__marque">Volkswagen</p><p class="item__titre">Polo 6 · Éclairage d'ambiance intérieur</p></div>
+        <button class="item__ouvrir" type="button" aria-label="Agrandir la photo : Volkswagen Polo 6 · Éclairage d'ambiance intérieur"></button>
+      </article>
+
+      <article class="item rev" data-marque="mercedes" data-presta="ambiance" style="--d:120ms">
+        <div class="item__fond amb-6"></div>
+        <img src="assets/galerie/mercedes-cla.webp" alt="Mercedes CLA : éclairage d'ambiance violet sur la planche de bord et les aérateurs" loading="lazy" decoding="async" data-optionnel>
+        <div class="item__voile"></div>
+        <div class="item__txt"><p class="item__marque">Mercedes</p><p class="item__titre">CLA · Éclairage d'ambiance intérieur</p></div>
+        <button class="item__ouvrir" type="button" aria-label="Agrandir la photo : Mercedes CLA · Éclairage d'ambiance intérieur"></button>
+      </article>
+
+      <article class="item rev" data-marque="mercedes" data-presta="ambiance" style="--d:0ms">
+        <div class="item__fond amb-1"></div>
+        <img src="assets/galerie/mercedes-slk.webp" alt="Mercedes SLK : éclairage d'ambiance bleu sur la console, les contre-portes et les planchers" loading="lazy" decoding="async" data-optionnel>
+        <div class="item__voile"></div>
+        <div class="item__txt"><p class="item__marque">Mercedes</p><p class="item__titre">SLK · Éclairage d'ambiance intérieur</p></div>
+        <button class="item__ouvrir" type="button" aria-label="Agrandir la photo : Mercedes SLK · Éclairage d'ambiance intérieur"></button>
+      </article>
+
+      <article class="item rev" data-marque="autres" data-presta="ambiance" style="--d:60ms">
+        <div class="item__fond amb-2"></div>
+        <img src="assets/galerie/opel-mokka.webp" alt="Opel Mokka : éclairage d'ambiance vert sur la console centrale et les contre-portes" loading="lazy" decoding="async" data-optionnel>
+        <div class="item__voile"></div>
+        <div class="item__txt"><p class="item__marque">Opel</p><p class="item__titre">Mokka · Éclairage d'ambiance intérieur</p></div>
+        <button class="item__ouvrir" type="button" aria-label="Agrandir la photo : Opel Mokka · Éclairage d'ambiance intérieur"></button>
+      </article>
+
+      <article class="item item--large rev" data-marque="mercedes" data-presta="ambiance" style="--d:120ms">
+        <div class="item__fond amb-3"></div>
+        <img src="assets/galerie/mercedes-glc-ambiance.webp" alt="Mercedes GLC : liseré d'ambiance rouge courant sur toute la planche de bord et la console" loading="lazy" decoding="async" data-optionnel>
+        <div class="item__voile"></div>
+        <div class="item__txt"><p class="item__marque">Mercedes</p><p class="item__titre">GLC · Éclairage d'ambiance rouge</p></div>
+        <button class="item__ouvrir" type="button" aria-label="Agrandir la photo : Mercedes GLC · Éclairage d'ambiance rouge"></button>
+      </article>
+
+      <article class="item rev" data-marque="mercedes" data-presta="ambiance" style="--d:0ms">
+        <div class="item__fond amb-4"></div>
+        <img src="assets/galerie/mercedes-classe-a.webp" alt="Mercedes Classe A : éclairage d'ambiance violet sur la planche de bord et les contre-portes" loading="lazy" decoding="async" data-optionnel>
+        <div class="item__voile"></div>
+        <div class="item__txt"><p class="item__marque">Mercedes</p><p class="item__titre">Classe A · Éclairage d'ambiance intérieur</p></div>
+        <button class="item__ouvrir" type="button" aria-label="Agrandir la photo : Mercedes Classe A · Éclairage d'ambiance intérieur"></button>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================ PRESTATIONS ============================ -->
+<section class="section" id="prestations">
+  <div class="wrap">
+    <div class="tete rev">
+      <p class="label">Nos prestations</p>
+      <h2 class="titre">Quatre spécialités, une seule exigence : l'intégration.</h2>
+      <p class="chapo">Chaque installation est pensée pour disparaître dans le véhicule. Pas de fil apparent, pas de plastique rapporté, pas de compromis sur l'électronique d'origine.</p>
+    </div>
+
+    <div class="grille-presta">
+
+      <a class="carte rev" href="#realisations" data-presta-lien="ambiance" style="--d:0ms">
+        <span class="carte__num">01</span>
+        <div class="carte__icone">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 16c4-6 14-6 18 0"/><path d="M3 16v2M21 16v2"/><circle cx="8" cy="12.6" r="1"/><circle cx="12" cy="11.6" r="1"/><circle cx="16" cy="12.6" r="1"/></svg>
+        </div>
+        <h3>Éclairage d'ambiance LED</h3>
+        <p>Bandeaux intégrés dans les garnitures, portes, planche de bord et pieds. Couleurs et intensité pilotables, allumage synchronisé avec le véhicule.</p>
+        <span class="carte__voir">Voir les réalisations <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+
+      <a class="carte rev" href="#realisations" data-presta-lien="carplay" style="--d:70ms">
+        <span class="carte__num">02</span>
+        <div class="carte__icone">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="13" rx="2"/><path d="M8 21h8M12 17.5V21"/><path d="M8.5 11h7"/></svg>
+        </div>
+        <h3>CarPlay & Android Auto</h3>
+        <p>Ajout du CarPlay sans fil et d'Android Auto sur votre écran d'origine, avec conservation des commandes au volant et du son constructeur.</p>
+        <span class="carte__voir">Voir les réalisations <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+
+      <a class="carte rev" href="#realisations" data-presta-lien="carplay" style="--d:140ms">
+        <span class="carte__num">03</span>
+        <div class="carte__icone">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="2.5" width="16" height="19" rx="2.5"/><path d="M9 6h6"/><circle cx="12" cy="17.5" r="1.2"/></svg>
+        </div>
+        <h3>Écrans Android</h3>
+        <p>Écrans tactiles haute définition adaptés à la planche de bord, applications, navigation et connectivité, sans dénaturer l'habitacle.</p>
+        <span class="carte__voir">Voir les réalisations <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+
+      <a class="carte rev" href="#realisations" data-presta-lien="compteur" style="--d:210ms">
+        <span class="carte__num">04</span>
+        <div class="carte__icone">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 17a9 9 0 1 1 17 0"/><path d="M12 17l4.2-5"/><circle cx="12" cy="17" r="1.3"/><path d="M2.5 17h19"/></svg>
+        </div>
+        <h3>Compteurs numériques</h3>
+        <p>Remplacement du combiné analogique par un compteur full digital, affichages configurables et graphismes fidèles à l'univers de la marque.</p>
+        <span class="carte__voir">Voir les réalisations <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================ TARIFS ============================ -->
+<section class="section" id="tarifs">
+  <div class="wrap">
+    <div class="tete rev">
+      <p class="label">Tarifs</p>
+      <h2 class="titre">Des packs clairs pour l'éclairage d'ambiance.</h2>
+      <p class="chapo">Quatre formules pour couvrir les configurations les plus demandées. Tout le reste se chiffre au cas par cas.</p>
+    </div>
+
+    <div class="tarifs-grille">
+      <article class="pack rev" style="--d:0ms">
+        <h3 class="pack__nom">Pack Élégance</h3>
+        <p class="pack__detail">Tableau de bord + 4 éclairages plancher</p>
+        <p class="pack__prix">270 €<span class="pack__apd">à partir de</span></p>
+        <a class="pack__btn" href="#devis" data-pack="Pack Élégance — Tableau de bord + 4 éclairages plancher">Choisir ce pack</a>
+      </article>
+
+      <article class="pack rev" style="--d:100ms">
+        <h3 class="pack__nom">Pack Prestige</h3>
+        <p class="pack__detail">Tableau de bord + 2 portes</p>
+        <p class="pack__prix">320 €<span class="pack__apd">à partir de</span></p>
+        <a class="pack__btn" href="#devis" data-pack="Pack Prestige — Tableau de bord + 2 portes">Choisir ce pack</a>
+      </article>
+
+      <article class="pack rev" style="--d:200ms">
+        <h3 class="pack__nom">Pack Excellence</h3>
+        <p class="pack__detail">Tableau de bord + 4 portes</p>
+        <p class="pack__prix">420 €<span class="pack__apd">à partir de</span></p>
+        <a class="pack__btn" href="#devis" data-pack="Pack Excellence — Tableau de bord + 4 portes">Choisir ce pack</a>
+      </article>
+
+      <article class="pack pack--phare rev" style="--d:300ms">
+        <span class="pack__marque">Le plus complet</span>
+        <h3 class="pack__nom">Pack Premium</h3>
+        <p class="pack__detail">Tableau de bord + 4 portes + 4 éclairages plancher</p>
+        <p class="pack__prix">480 €<span class="pack__apd">à partir de</span></p>
+        <a class="pack__btn" href="#devis" data-pack="Pack Premium — Tableau de bord + 4 portes + 4 éclairages plancher">Choisir ce pack</a>
+      </article>
+    </div>
+
+    <div class="tarifs-pied rev">
+      <p><strong>Options et véhicules spécifiques sur devis :</strong> console centrale, aérateurs lumineux, intégration dans l'écran d'origine, véhicules complexes.</p>
+      <p>Tarifs à partir de, selon le véhicule et la finition souhaitée. Matériel garanti, pose garantie et suivi après intervention.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ POURQUOI ============================ -->
+<section class="section" id="pourquoi" style="background:linear-gradient(180deg, transparent, rgba(124,77,232,.045), transparent);">
+  <div class="wrap">
+    <div class="tete rev">
+      <p class="label">Pourquoi MS Custom</p>
+      <h2 class="titre">Le travail se juge une fois les garnitures remontées.</h2>
+    </div>
+
+    <div class="atouts">
+      <div class="atout rev">
+        <span class="atout__tick"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg></span>
+        <div><h3>Installation professionnelle</h3><p>Démontage maîtrisé, connectiques d'origine privilégiées, faisceaux protégés et repérés.</p></div>
+      </div>
+      <div class="atout rev" style="--d:60ms">
+        <span class="atout__tick"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg></span>
+        <div><h3>Intégration soignée</h3><p>Aucun élément visible qui ne devrait pas l'être. Le rendu doit passer pour une option constructeur.</p></div>
+      </div>
+      <div class="atout rev" style="--d:120ms">
+        <span class="atout__tick"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg></span>
+        <div><h3>Matériel de qualité</h3><p>Composants sélectionnés pour leur tenue dans le temps et leur compatibilité avec l'électronique du véhicule.</p></div>
+      </div>
+      <div class="atout rev" style="--d:180ms">
+        <span class="atout__tick"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg></span>
+        <div><h3>Travail sur mesure</h3><p>Chaque modèle a ses contraintes. Le montage est adapté au véhicule, jamais l'inverse.</p></div>
+      </div>
+      <div class="atout rev" style="--d:240ms">
+        <span class="atout__tick"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg></span>
+        <div><h3>Conseils personnalisés</h3><p>On vous dit ce qui est faisable, ce qui l'est moins, et ce qui n'en vaut pas la peine sur votre modèle.</p></div>
+      </div>
+      <div class="atout rev" style="--d:300ms">
+        <span class="atout__tick"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg></span>
+        <div><h3>Respect du véhicule</h3><p>Housses de protection, couple de serrage respecté, aucune modification irréversible sans votre accord.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ MÉTHODE ============================ -->
+<section class="section" id="methode">
+  <div class="wrap">
+    <div class="tete rev">
+      <p class="label">Notre méthode</p>
+      <h2 class="titre">Cinq étapes, du premier message aux clés rendues.</h2>
+    </div>
+
+    <ol class="etapes" style="list-style:none;margin:0;padding:0">
+      <li class="etape rev">
+        <span class="etape__num" aria-hidden="true">01</span>
+        <div><h3>Prise de contact</h3><p>Vous décrivez votre véhicule et votre projet via le formulaire, par téléphone ou sur Instagram. On revient vers vous rapidement.</p></div>
+      </li>
+      <li class="etape rev" style="--d:60ms">
+        <span class="etape__num" aria-hidden="true">02</span>
+        <div><h3>Étude du projet</h3><p>Vérification de la compatibilité avec votre modèle, votre millésime et votre équipement d'origine. On valide ce qui est réalisable proprement.</p></div>
+      </li>
+      <li class="etape rev" style="--d:120ms">
+        <span class="etape__num" aria-hidden="true">03</span>
+        <div><h3>Devis</h3><p>Un devis détaillé, matériel et main-d'œuvre séparés, avec la durée d'immobilisation annoncée. Aucun engagement avant votre accord.</p></div>
+      </li>
+      <li class="etape rev" style="--d:180ms">
+        <span class="etape__num" aria-hidden="true">04</span>
+        <div><h3>Installation</h3><p>Intervention à l'atelier de Vercel-Villedieu-le-Camp, protections en place, démontage et remontage soignés, essais complets avant remontage final.</p></div>
+      </li>
+      <li class="etape rev" style="--d:240ms">
+        <span class="etape__num" aria-hidden="true">05</span>
+        <div><h3>Restitution du véhicule</h3><p>Prise en main des nouvelles fonctions et réglages selon vos préférences. Nous restons joignables après l'intervention.</p></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============================ AVIS ============================ -->
+<section class="section" id="avis" style="background:linear-gradient(180deg, transparent, rgba(47,139,255,.05), transparent);">
+  <div class="wrap">
+    <div class="avis-tete rev">
+      <div>
+        <p class="label">Avis clients</p>
+        <h2 class="titre">Ce que disent les véhicules repartis d'ici.</h2>
+      </div>
+      <a class="note" href="https://www.google.com/maps/search/?api=1&amp;query=MS+Custom+Vercel-Villedieu-le-Camp" target="_blank" rel="noopener">
+        <span class="note__chiffre">5,0</span>
+        <div>
+          <div class="etoiles" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+          </div>
+          <small>51 avis Google · voir la fiche</small>
+        </div>
+      </a>
+    </div>
+
+    <!-- Avis publiés sur la fiche Google de MS Custom, repris ici sous forme abrégée. -->
+    <div class="avis-grille">
+      <blockquote class="avis rev">
+        <p>« On m'a conseillé ses services pour l'installation d'un éclairage d'ambiance sur mon Audi Q2 de 2018. Éclairage super bien posé, aucun câble apparent, application super intuitive. À peine une grosse matinée pour réaliser ce travail. Cette installation métamorphose totalement la voiture. »</p>
+        <footer><span class="avis__pastille">JR</span><span><span class="avis__nom">Jordan R.</span><span class="avis__veh">Audi Q2 · Éclairage d'ambiance</span></span></footer>
+      </blockquote>
+      <blockquote class="avis rev" style="--d:70ms">
+        <p>« Pose rapide et propre ! Le CarPlay fonctionne parfaitement sans délai ni rien sur l'écran d'origine de mon A3 8v ! Je recommande les yeux fermés, passionné par son travail et prend soin du véhicule ! »</p>
+        <footer><span class="avis__pastille">MC</span><span><span class="avis__nom">Mickael C.</span><span class="avis__veh">Audi A3 8v · CarPlay</span></span></footer>
+      </blockquote>
+      <blockquote class="avis rev" style="--d:140ms">
+        <p>« Pose de LED intérieur (tableau de bord / portière / plancher). Très satisfaite du résultat !!! Très bon travail, consciencieux, pose propre, aucuns fils apparent, fait rapidement en une matinée ! Je recommande les yeux fermés. »</p>
+        <footer><span class="avis__pastille">MZ</span><span><span class="avis__nom">Mélissa C.</span><span class="avis__veh">Éclairage LED intérieur</span></span></footer>
+      </blockquote>
+      <blockquote class="avis rev" style="--d:0ms">
+        <p>« Ravie de mon installation CarPlay sur ma DS3 ! Travail pro, rapide et des explications claires. Je recommande vivement MS Custom. »</p>
+        <footer><span class="avis__pastille">LB</span><span><span class="avis__nom">Léna B.</span><span class="avis__veh">DS 3 · CarPlay</span></span></footer>
+      </blockquote>
+      <blockquote class="avis rev" style="--d:70ms">
+        <p>« Installation de l'Apple CarPlay + changement de l'écran : le résultat est juste nickel. Travail propre, rapide, et fait par quelqu'un qui maîtrise vraiment ce qu'il fait. Ma voiture a pris un vrai coup de jeune ! »</p>
+        <footer><span class="avis__pastille">AB</span><span><span class="avis__nom">Alexandre B.</span><span class="avis__veh">CarPlay &amp; changement d'écran</span></span></footer>
+      </blockquote>
+      <blockquote class="avis rev" style="--d:140ms">
+        <p>« Installation professionnelle et sécurisée, travail bien fait et soigneux ! Rendu incroyable. Prix très abordables et matériel de qualité. »</p>
+        <footer><span class="avis__pastille">MB</span><span><span class="avis__nom">Maxime B.</span><span class="avis__veh">Installation complète</span></span></footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FAQ ============================ -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="tete rev">
+      <p class="label">Questions fréquentes</p>
+      <h2 class="titre">Les réponses avant même le devis.</h2>
+    </div>
+
+    <div class="faq">
+      <details class="qa rev">
+        <summary class="qa__q">Mon véhicule est-il compatible ?<span class="qa__plus" aria-hidden="true"></span></summary>
+        <div class="qa__r"><p>Nous intervenons sur toutes les marques. La compatibilité dépend surtout du modèle, de l'année et de l'équipement d'origine, pas du constructeur. Nous avons déjà travaillé sur Mercedes, Audi, BMW, Porsche, Volkswagen, Opel, DS, Lamborghini et bien d'autres. Envoyez-nous le modèle et l'année : la vérification est gratuite.</p></div>
+      </details>
+      <details class="qa rev">
+        <summary class="qa__q">Combien de temps dure une installation ?<span class="qa__plus" aria-hidden="true"></span></summary>
+        <div class="qa__r"><p>Un CarPlay ou un compteur numérique se fait généralement dans la journée. Un éclairage d'ambiance complet demande un à plusieurs jours selon le nombre de zones et le démontage nécessaire. La durée exacte figure sur le devis.</p></div>
+      </details>
+      <details class="qa rev">
+        <summary class="qa__q">Y a-t-il une garantie sur les installations ?<span class="qa__plus" aria-hidden="true"></span></summary>
+        <div class="qa__r"><p>Le matériel bénéficie de la garantie de son fabricant et la pose est garantie par nos soins. En cas de souci lié à l'installation, le véhicule est repris à l'atelier. Les conditions précises sont indiquées sur votre devis.</p></div>
+      </details>
+      <details class="qa rev">
+        <summary class="qa__q">Est-ce que cela abîme le véhicule ou son électronique ?<span class="qa__plus" aria-hidden="true"></span></summary>
+        <div class="qa__r"><p>Non. Nous privilégions les connectiques d'origine et les montages réversibles, avec sauvegarde des paramètres avant toute intervention sur l'électronique. Si une intervention devait être irréversible, elle vous serait signalée avant, et rien ne se fait sans votre accord.</p></div>
+      </details>
+      <details class="qa rev">
+        <summary class="qa__q">Intervenez-vous à domicile ?<span class="qa__plus" aria-hidden="true"></span></summary>
+        <div class="qa__r"><p>Non. Toutes les installations sont réalisées uniquement dans notre atelier de Vercel-Villedieu-le-Camp, dans le Doubs. C'est la condition pour travailler avec le bon outillage, à l'abri, et garantir la qualité du montage.</p></div>
+      </details>
+      <details class="qa rev">
+        <summary class="qa__q">Comment obtenir un devis ?<span class="qa__plus" aria-hidden="true"></span></summary>
+        <div class="qa__r"><p>Remplissez le formulaire ci-dessous avec votre véhicule, son année et le projet souhaité. Plus votre description est précise, plus le devis est juste. Vous recevez une réponse chiffrée, sans engagement.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<div class="seam" aria-hidden="true"></div>
+
+<!-- ============================ CONTACT ============================ -->
+<section class="section" id="devis">
+  <div class="wrap">
+    <div class="tete rev">
+      <p class="label">Demande de devis</p>
+      <h2 class="titre">Décrivez votre projet, on s'occupe du reste.</h2>
+      <p class="chapo">Réponse sous 24 à 48 h ouvrées. Aucun engagement.</p>
+    </div>
+
+    <div class="contact">
+      <!-- Formulaire compatible Netlify Forms : les envois arrivent dans l'onglet "Forms" du site Netlify. -->
+      <form class="form rev" name="devis" method="POST" data-netlify="true" netlify-honeypot="societe" action="/merci.html">
+        <input type="hidden" name="form-name" value="devis">
+        <p class="cache"><label>Ne pas remplir : <input name="societe" tabindex="-1" autocomplete="off"></label></p>
+
+        <div class="champ">
+          <label for="nom">Nom</label>
+          <input id="nom" name="nom" type="text" autocomplete="name" placeholder="Prénom et nom" required>
+        </div>
+        <div class="champ">
+          <label for="tel">Téléphone</label>
+          <input id="tel" name="telephone" type="tel" autocomplete="tel" placeholder="06 00 00 00 00" required>
+        </div>
+        <div class="champ champ--plein">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="vous@exemple.fr" required>
+        </div>
+        <div class="champ">
+          <label for="vehicule">Véhicule</label>
+          <input id="vehicule" name="vehicule" type="text" placeholder="Mercedes Classe C 220d" required>
+        </div>
+        <div class="champ">
+          <label for="annee">Année</label>
+          <input id="annee" name="annee" type="number" inputmode="numeric" min="1990" max="2030" placeholder="2018" required>
+        </div>
+        <div class="champ champ--plein">
+          <label for="projet">Projet souhaité</label>
+          <textarea id="projet" name="projet" placeholder="Éclairage d'ambiance sur les portes et la planche de bord, plus l'ajout du CarPlay sans fil…" required></textarea>
+        </div>
+
+        <div class="form__pied">
+          <button class="btn btn--primaire" type="submit">
+            Envoyer ma demande
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+          <small>Vos informations servent uniquement à établir votre devis.</small>
+        </div>
+      </form>
+
+      <div class="infos rev" style="--d:100ms">
+        <a class="info" href="https://www.instagram.com/mscustom25" target="_blank" rel="noopener">
+          <span class="info__label">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></svg>
+            Instagram
+          </span>
+          <strong>@mscustom25</strong>
+          <span>Réalisations en cours, avant / après et coulisses d'atelier.</span>
+        </a>
+
+        <a class="info" href="https://www.google.com/maps/search/?api=1&amp;query=2+rue+du+Seut+25530+Vercel-Villedieu-le-Camp" target="_blank" rel="noopener">
+          <span class="info__label">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            Atelier
+          </span>
+          <strong>2 rue du Seut</strong>
+          <span>25530 Vercel-Villedieu-le-Camp, Doubs · Toutes les installations sont réalisées sur place.</span>
+        </a>
+
+        <a class="info" href="tel:+33623223095">
+          <span class="info__label">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3h3l1.5 4-2 1.5a12 12 0 0 0 5.5 5.5L16 12l4 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4 6.2 2 2 0 0 1 6 4z"/></svg>
+            Téléphone
+          </span>
+          <strong>06 23 22 30 95</strong>
+          <span>Appelez ou envoyez un message pour décrire votre projet.</span>
+        </a>
+
+        <div class="info">
+          <span class="info__label">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.3l3.4 2"/></svg>
+            Horaires
+          </span>
+          <strong>Mardi – Dimanche · 9h – 19h</strong>
+          <span>Ouvert le week-end, dimanche compris. Fermé le lundi.</span>
+        </div>
+      </div>
+
+      <div class="carte-map rev" id="carte-map"
+           data-src="https://maps.google.com/maps?q=2%20rue%20du%20Seut%2025530%20Vercel-Villedieu-le-Camp&amp;z=15&amp;output=embed">
+        <button class="carte-map__invite" type="button" id="charger-carte">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <strong>Afficher la carte</strong>
+          <span>2 rue du Seut, 25530 Vercel-Villedieu-le-Camp. La carte est fournie par Google : elle ne se charge qu'à votre demande.</span>
+        </button>
+        <a class="carte-map__lien" href="https://www.google.com/maps/search/?api=1&amp;query=2+rue+du+Seut+25530+Vercel-Villedieu-le-Camp" target="_blank" rel="noopener">Itinéraire</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================ APPEL À L'ACTION MOBILE ============================ -->
+<div class="cta-fixe" id="cta-fixe">
+  <a class="btn btn--primaire" href="#devis">
+    Demander un devis
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+  </a>
+  <a class="cta-fixe__tel" href="tel:+33623223095" aria-label="Appeler MS Custom au 06 23 22 30 95">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3h3l1.5 4-2 1.5a12 12 0 0 0 5.5 5.5L16 12l4 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4 6.2 2 2 0 0 1 6 4z"/></svg>
+  </a>
+</div>
+
+<!-- ============================ VISIONNEUSE ============================ -->
+<div class="visio" id="visio" hidden role="dialog" aria-modal="true" aria-label="Photo agrandie">
+  <button class="visio__fermer" type="button" id="visio-fermer" aria-label="Fermer">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <button class="visio__nav visio__prec" type="button" id="visio-prec" aria-label="Photo précédente">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+  </button>
+  <button class="visio__nav visio__suiv" type="button" id="visio-suiv" aria-label="Photo suivante">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+  </button>
+  <figure class="visio__cadre">
+    <img id="visio-img" src="" alt="">
+    <figcaption>
+      <span class="visio__marque" id="visio-marque"></span>
+      <span class="visio__titre" id="visio-titre"></span>
+      <span class="visio__compteur" id="visio-compteur"></span>
+    </figcaption>
+  </figure>
+</div>
+
+<!-- ============================ PIED DE PAGE ============================ -->
+<footer class="pied">
+  <div class="wrap">
+    <div class="pied__haut">
+      <div>
+        <a class="logo" href="#"><img class="logo__mark" src="assets/logo.webp" alt="Logo MS Custom" width="56" height="56" loading="lazy">MS<em>Custom</em></a>
+        <p>Retrofit automobile haut de gamme. Éclairage d'ambiance, multimédia et compteurs numériques, intégrés avec un rendu proche de l'origine.</p>
+      </div>
+      <div>
+        <h4>Prestations</h4>
+        <ul>
+          <li><a href="#prestations">Éclairage d'ambiance LED</a></li>
+          <li><a href="#prestations">CarPlay & Android Auto</a></li>
+          <li><a href="#prestations">Écrans Android</a></li>
+          <li><a href="#prestations">Compteurs numériques</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Le studio</h4>
+        <ul>
+          <li><a href="#realisations">Réalisations</a></li>
+          <li><a href="#tarifs">Tarifs</a></li>
+          <li><a href="#methode">Notre méthode</a></li>
+          <li><a href="#faq">Questions fréquentes</a></li>
+          <li><a href="#devis">Demander un devis</a></li>
+          <li><a href="https://www.instagram.com/mscustom25" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="tel:+33623223095">06 23 22 30 95</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pied__bas">
+      <span>© <span id="annee-courante">2026</span> MS Custom · 2 rue du Seut, 25530 Vercel-Villedieu-le-Camp</span>
+      <span>Mentions légales · Politique de confidentialité</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ============================================================
+   JS — quatre comportements, rien de plus.
+   1. En-tête + barre de progression
+   2. Apparitions au défilement
+   3. Filtres de la galerie
+   4. FAQ (accordéon animé) + divers
+   ============================================================ */
+(function(){
+  'use strict';
+  var doux = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* --- Séquence d'ouverture du hero --- */
+  var hero = document.getElementById('hero');
+  requestAnimationFrame(function(){ hero.classList.add('is-pret'); });
+
+  /* --- Photos optionnelles : on retire l'image si le fichier n'existe pas --- */
+  document.querySelectorAll('img[data-optionnel]').forEach(function(img){
+    img.addEventListener('error', function(){ img.remove(); });
+    if (img.complete && img.naturalWidth === 0) img.remove();
+  });
+
+  /* --- 1. En-tête fixe + progression de lecture --- */
+  var entete = document.getElementById('entete');
+  var progres = document.getElementById('progres');
+  var tic = false;
+  function surDefilement(){
+    var y = window.scrollY;
+    entete.classList.toggle('is-fixe', y > 24);
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    progres.style.transform = 'scaleX(' + (h > 0 ? Math.min(y / h, 1) : 0) + ')';
+    tic = false;
+  }
+  window.addEventListener('scroll', function(){
+    if (!tic){ requestAnimationFrame(surDefilement); tic = true; }
+  }, {passive:true});
+  surDefilement();
+
+  /* --- Menu mobile --- */
+  var burger = document.getElementById('burger');
+  var nav = document.getElementById('nav');
+  function fermerMenu(){
+    entete.classList.remove('is-ouvert');
+    burger.setAttribute('aria-expanded','false');
+    burger.setAttribute('aria-label','Ouvrir le menu');
+  }
+  burger.addEventListener('click', function(){
+    var ouvert = entete.classList.toggle('is-ouvert');
+    burger.setAttribute('aria-expanded', String(ouvert));
+    burger.setAttribute('aria-label', ouvert ? 'Fermer le menu' : 'Ouvrir le menu');
+  });
+  nav.addEventListener('click', function(e){ if (e.target.closest('a')) fermerMenu(); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') fermerMenu(); });
+
+  /* --- 2. Apparitions au défilement --- */
+  var aReveler = document.querySelectorAll('.rev');
+  var obs = null;
+  if (!doux || !('IntersectionObserver' in window)){
+    aReveler.forEach(function(el){ el.classList.add('is-vu'); });
+  } else {
+    obs = new IntersectionObserver(function(entrees){
+      entrees.forEach(function(entree){
+        if (entree.isIntersecting){
+          entree.target.classList.add('is-vu');
+          obs.unobserve(entree.target);
+        }
+      });
+    }, {rootMargin:'0px 0px -12% 0px', threshold:0.08});
+    aReveler.forEach(function(el){ obs.observe(el); });
+  }
+
+  /* --- 3. Filtres de la galerie --- */
+  var filtres = document.querySelectorAll('.filtre');
+  var items = [];
+  function appliquerFiltre(cible, champ){
+      filtres.forEach(function(b){
+        b.setAttribute('aria-pressed', String(b.dataset.filtre === cible && b.dataset.champ === champ));
+      });
+      document.getElementById('galerie').classList.toggle('est-filtree', cible !== 'tous');
+      items.forEach(function(item){
+        var visible = cible === 'tous'
+          || (champ === 'marque' && item.dataset.marque === cible)
+          || (champ === 'presta' && (item.dataset.presta || '').split(' ').indexOf(cible) > -1);
+        if (visible){
+          item.classList.remove('is-masque');
+          item.style.opacity = '0';
+          item.style.transform = 'scale(.97)';
+          requestAnimationFrame(function(){
+            item.style.opacity = '1';
+            item.style.transform = 'none';
+          });
+        } else {
+          item.classList.add('is-masque');
+        }
+      });
+  }
+
+  filtres.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      appliquerFiltre(btn.dataset.filtre, btn.dataset.champ);
+      vListe = [];
+    });
+  });
+
+  /* Une carte de prestation filtre la galerie avant d'y emmener le visiteur */
+  document.querySelectorAll('[data-presta-lien]').forEach(function(carte){
+    carte.addEventListener('click', function(){
+      appliquerFiltre(carte.dataset.prestaLien, 'presta');
+    });
+  });
+
+  /* --- 4. FAQ : ouverture animée, une seule réponse à la fois --- */
+  document.querySelectorAll('.qa').forEach(function(qa){
+    var corps = qa.querySelector('.qa__r');
+    var q = qa.querySelector('.qa__q');
+
+    function hauteur(){ return corps.scrollHeight + 'px'; }
+
+    q.addEventListener('click', function(e){
+      e.preventDefault();
+      var ouvert = qa.hasAttribute('open');
+
+      if (!ouvert){
+        document.querySelectorAll('.qa[open]').forEach(function(autre){
+          if (autre !== qa){
+            var c = autre.querySelector('.qa__r');
+            c.style.height = c.scrollHeight + 'px';
+            requestAnimationFrame(function(){ c.style.height = '0px'; });
+            setTimeout(function(){ autre.removeAttribute('open'); c.style.height = ''; }, doux ? 380 : 0);
+          }
+        });
+        qa.setAttribute('open','');
+        corps.style.height = '0px';
+        requestAnimationFrame(function(){
+          corps.style.transition = doux ? 'height .42s cubic-bezier(.22,.8,.28,1)' : 'none';
+          corps.style.height = hauteur();
+        });
+        setTimeout(function(){ corps.style.height = 'auto'; }, doux ? 440 : 0);
+      } else {
+        corps.style.height = corps.scrollHeight + 'px';
+        requestAnimationFrame(function(){ corps.style.height = '0px'; });
+        setTimeout(function(){ qa.removeAttribute('open'); corps.style.height = ''; }, doux ? 400 : 0);
+      }
+    });
+  });
+
+  /* --- 5. Visionneuse : agrandir une réalisation --- */
+  var visio = document.getElementById('visio');
+  var vImg = document.getElementById('visio-img');
+  var vMarque = document.getElementById('visio-marque');
+  var vTitre = document.getElementById('visio-titre');
+  var vCompteur = document.getElementById('visio-compteur');
+  var vListe = [], vIndex = 0, vDeclencheur = null;
+
+  function visibles(){
+    return Array.prototype.filter.call(items, function(i){ return !i.classList.contains('is-masque'); });
+  }
+  function afficher(i){
+    vListe = vListe.length ? vListe : visibles();
+    vIndex = (i + vListe.length) % vListe.length;
+    var item = vListe[vIndex];
+    var img = item.querySelector('img');
+    vImg.src = img ? img.src : '';
+    vImg.alt = img ? img.alt : '';
+    vMarque.textContent = item.querySelector('.item__marque').textContent;
+    vTitre.textContent = item.querySelector('.item__titre').textContent;
+    vCompteur.textContent = (vIndex + 1) + ' / ' + vListe.length;
+    var multiple = vListe.length > 1;
+    document.getElementById('visio-prec').hidden = !multiple;
+    document.getElementById('visio-suiv').hidden = !multiple;
+  }
+  function ouvrir(item, declencheur){
+    vListe = visibles();
+    var i = vListe.indexOf(item);
+    if (i < 0) return;
+    vDeclencheur = declencheur;
+    visio.hidden = false;
+    document.body.classList.add('est-bloque');
+    document.getElementById('cta-fixe').classList.add('est-rangee');
+    afficher(i);
+    requestAnimationFrame(function(){ visio.classList.add('est-ouverte'); });
+    document.getElementById('visio-fermer').focus();
+  }
+  function fermer(){
+    visio.classList.remove('est-ouverte');
+    document.body.classList.remove('est-bloque');
+    document.getElementById('cta-fixe').classList.remove('est-rangee');
+    setTimeout(function(){ visio.hidden = true; vImg.src = ''; vListe = []; }, doux ? 320 : 0);
+    if (vDeclencheur) vDeclencheur.focus();
+  }
+
+  document.getElementById('visio-fermer').addEventListener('click', fermer);
+  document.getElementById('visio-prec').addEventListener('click', function(){ afficher(vIndex - 1); });
+  document.getElementById('visio-suiv').addEventListener('click', function(){ afficher(vIndex + 1); });
+  visio.addEventListener('click', function(e){ if (e.target === visio) fermer(); });
+  document.addEventListener('keydown', function(e){
+    if (visio.hidden) return;
+    if (e.key === 'Escape') fermer();
+    if (e.key === 'ArrowLeft') afficher(vIndex - 1);
+    if (e.key === 'ArrowRight') afficher(vIndex + 1);
+  });
+  /* Balayage horizontal sur mobile */
+  var xDepart = null;
+  visio.addEventListener('touchstart', function(e){ xDepart = e.changedTouches[0].clientX; }, {passive:true});
+  visio.addEventListener('touchend', function(e){
+    if (xDepart === null) return;
+    var dx = e.changedTouches[0].clientX - xDepart;
+    if (Math.abs(dx) > 55) afficher(vIndex + (dx < 0 ? 1 : -1));
+    xDepart = null;
+  }, {passive:true});
+
+  /* --- 6. Barre d'action mobile : s'efface au bon moment --- */
+  var ctaFixe = document.getElementById('cta-fixe');
+  var devis = document.getElementById('devis');
+
+  function rangerCta(ranger){ ctaFixe.classList.toggle('est-rangee', ranger); }
+
+  if ('IntersectionObserver' in window){
+    new IntersectionObserver(function(e){
+      rangerCta(e[0].isIntersecting);            // inutile quand le formulaire est visible
+    }, {threshold:0.12}).observe(devis);
+  }
+
+  /* --- 7 ter. « Choisir ce pack » pré-remplit la demande de devis --- */
+  document.querySelectorAll('.pack__btn').forEach(function(lien){
+    lien.addEventListener('click', function(){
+      var champ = document.getElementById('projet');
+      if (champ && !champ.value.trim()){
+        champ.value = lien.dataset.pack;
+      }
+    });
+  });
+
+  /* --- 7 bis. Galerie pilotée par data/realisations.json --- */
+  var galerie = document.getElementById('galerie');
+
+  function construireGalerie(liste){
+    galerie.innerHTML = '';
+    liste.forEach(function(r, i){
+      var art = document.createElement('article');
+      art.className = 'item rev' + (r.format === 'vedette' ? ' item--vedette' : r.format === 'large' ? ' item--large' : '');
+      art.dataset.marque = r.filtre || 'autres';
+      art.dataset.presta = (r.prestations || []).join(' ');
+      if (i) art.style.setProperty('--d', (60 * (i % 3)) + 'ms');
+
+      var fond = document.createElement('div');
+      fond.className = 'item__fond amb-' + (i % 6 + 1);
+
+      var img = document.createElement('img');
+      img.src = r.photo; img.alt = r.alt || (r.marque + ' ' + r.titre);
+      img.loading = 'lazy'; img.decoding = 'async';
+      img.addEventListener('error', function(){ img.remove(); });
+
+      var voile = document.createElement('div');
+      voile.className = 'item__voile';
+
+      var txt = document.createElement('div');
+      txt.className = 'item__txt';
+      var pm = document.createElement('p'); pm.className = 'item__marque'; pm.textContent = r.marque;
+      var pt = document.createElement('p'); pt.className = 'item__titre'; pt.textContent = r.titre;
+      txt.appendChild(pm); txt.appendChild(pt);
+
+      var btn = document.createElement('button');
+      btn.type = 'button'; btn.className = 'item__ouvrir';
+      btn.setAttribute('aria-label', 'Agrandir la photo : ' + r.marque + ' ' + r.titre);
+
+      art.appendChild(fond); art.appendChild(img); art.appendChild(voile);
+      art.appendChild(txt); art.appendChild(btn);
+      galerie.appendChild(art);
+    });
+  }
+
+  function initGalerie(){
+    items = Array.prototype.slice.call(galerie.querySelectorAll('.item'));
+    items.forEach(function(el){
+      if (obs && !el.classList.contains('is-vu')) obs.observe(el); else el.classList.add('is-vu');
+    });
+    galerie.querySelectorAll('.item__ouvrir').forEach(function(btn){
+      btn.addEventListener('click', function(){ ouvrir(btn.closest('.item'), btn); });
+    });
+  }
+
+  initGalerie();   // galerie présente dans le HTML : fonctionne sans JavaScript et hors ligne
+
+  fetch('data/realisations.json', {cache:'no-store'})
+    .then(function(r){ return r.ok ? r.json() : Promise.reject(); })
+    .then(function(d){
+      if (d && d.realisations && d.realisations.length){
+        construireGalerie(d.realisations);
+        initGalerie();
+        vListe = [];
+      }
+    })
+    .catch(function(){ /* fichier absent ou ouverture locale : on garde la galerie du HTML */ });
+
+  /* --- 7. Carte Google : chargée uniquement au clic --- */
+  var blocCarte = document.getElementById('carte-map');
+  var boutonCarte = document.getElementById('charger-carte');
+  if (boutonCarte){
+    boutonCarte.addEventListener('click', function(){
+      var cadre = document.createElement('iframe');
+      cadre.src = blocCarte.dataset.src;
+      cadre.loading = 'lazy';
+      cadre.title = "Atelier MS Custom, 2 rue du Seut, Vercel-Villedieu-le-Camp";
+      cadre.referrerPolicy = 'no-referrer-when-downgrade';
+      cadre.allowFullscreen = true;
+      blocCarte.insertBefore(cadre, blocCarte.firstChild);
+      blocCarte.classList.add('est-chargee');
+    });
+  }
+
+  /* --- Année du copyright --- */
+  document.getElementById('annee-courante').textContent = new Date().getFullYear();
+})();
+</script>
+<!-- Défilement inertiel à la molette (ordinateur). Volontairement désactivé
+     au doigt : l'inertie native de l'iPhone reste meilleure que toute imitation.
+     Pour revenir au défilement natif partout, supprimez ces deux blocs. -->
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script>
+  window.addEventListener('load', function(){
+    if (!window.Lenis) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (!window.matchMedia('(hover:hover) and (pointer:fine)').matches) return;
+    var lenis = new Lenis({ duration: 1.05, smoothWheel: true, smoothTouch: false });
+    document.documentElement.style.scrollBehavior = 'auto';
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){
+      a.addEventListener('click', function(e){
+        var cible = document.querySelector(a.getAttribute('href'));
+        if (cible){ e.preventDefault(); lenis.scrollTo(cible, { offset: -74 }); }
+      });
+    });
+    function boucle(t){ lenis.raf(t); requestAnimationFrame(boucle); }
+    requestAnimationFrame(boucle);
+  });
+</script>
+
+</body>
+</html>
