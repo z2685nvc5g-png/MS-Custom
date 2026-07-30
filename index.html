@@ -1737,8 +1737,8 @@ body.est-bloque{ overflow:hidden; }
   <div class="wrap">
     <div class="tete rev">
       <p class="label">Tarifs</p>
-      <h2 class="titre">Des packs clairs pour l'éclairage d'ambiance.</h2>
-      <p class="chapo">Quatre formules pour couvrir les configurations les plus demandées. Tout le reste se chiffre au cas par cas.</p>
+      <h2 class="titre">Nos packs d'éclairage d'ambiance</h2>
+      <p class="chapo">Choisissez la formule qui correspond à votre projet. Chaque installation peut être personnalisée selon votre véhicule et vos envies.</p>
     </div>
 
     <div class="tarifs-grille">
@@ -2423,6 +2423,8 @@ body.est-bloque{ overflow:hidden; }
       art.className = 'item rev' + (r.format === 'vedette' ? ' item--vedette' : r.format === 'large' ? ' item--large' : '');
       art.dataset.marque = r.filtre || 'autres';
       art.dataset.presta = (r.prestations || []).join(' ');
+      var autres = r.photos || [];
+      if (autres.length) art.dataset.photos = autres.join('|');
       if (i) art.style.setProperty('--d', (60 * (i % 3)) + 'ms');
 
       var fond = document.createElement('div');
@@ -2436,6 +2438,14 @@ body.est-bloque{ overflow:hidden; }
       var voile = document.createElement('div');
       voile.className = 'item__voile';
 
+      if (autres.length){
+        var compte = document.createElement('span');
+        compte.className = 'item__compte';
+        compte.setAttribute('aria-hidden', 'true');
+        compte.textContent = (1 + autres.length) + ' photos';
+        art.appendChild(compte);
+      }
+
       var txt = document.createElement('div');
       txt.className = 'item__txt';
       var pm = document.createElement('p'); pm.className = 'item__marque'; pm.textContent = r.marque;
@@ -2446,7 +2456,9 @@ body.est-bloque{ overflow:hidden; }
       btn.type = 'button'; btn.className = 'item__ouvrir';
       btn.setAttribute('aria-label', 'Agrandir la photo : ' + r.marque + ' ' + r.titre);
 
-      art.appendChild(fond); art.appendChild(img); art.appendChild(voile);
+      art.insertBefore(fond, art.firstChild);
+      art.insertBefore(img, fond.nextSibling);
+      art.insertBefore(voile, img.nextSibling);
       art.appendChild(txt); art.appendChild(btn);
       galerie.appendChild(art);
     });
