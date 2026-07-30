@@ -1,6 +1,10 @@
 User-agent: *
 Allow: /
-Disallow: /merci.html
 Disallow: /admin/
+Disallow: /merci.html
+
+# Les robots publicitaires n'ont rien à faire ici
+User-agent: AdsBot-Google
+Allow: /
 
 Sitemap: https://mscustom25.fr/sitemap.xml

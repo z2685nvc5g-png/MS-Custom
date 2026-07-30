@@ -27,6 +27,19 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+# Les images de la galerie changent de nom quand elles changent : cache long
+[[headers]]
+  for = "/assets/galerie/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Redirections : une seule adresse canonique, sans www
+[[redirects]]
+  from = "https://www.mscustom25.fr/*"
+  to = "https://mscustom25.fr/:splat"
+  status = 301
+  force = true
+
 [[headers]]
   for = "/*.html"
   [headers.values]
