@@ -2,9 +2,10 @@
   "realisations": [
     {
       "photo": "assets/galerie/lamborghini-urus.webp",
+      "photos": [],
       "marque": "Lamborghini",
       "titre": "Urus · Éclairage d'ambiance LED intégral",
-      "filtre": "autres",
+      "filtre": "lamborghini",
       "prestations": [
         "ambiance"
       ],
@@ -12,7 +13,129 @@
       "format": "vedette"
     },
     {
+      "photo": "assets/galerie/maserati-ghibli.webp",
+      "photos": [],
+      "marque": "Maserati",
+      "titre": "Ghibli · Éclairage d'ambiance intérieur",
+      "filtre": "maserati",
+      "prestations": [
+        "ambiance"
+      ],
+      "alt": "Maserati Ghibli : éclairage d'ambiance violet sur la planche de bord et la console centrale",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/mercedes-classe-a-w176.webp",
+      "photos": [
+        "assets/galerie/mercedes-classe-a-w176-2.webp",
+        "assets/galerie/mercedes-classe-a-w176-3.webp"
+      ],
+      "marque": "Mercedes",
+      "titre": "Classe A W176 · Retrofit écran grand format",
+      "filtre": "mercedes",
+      "prestations": [
+        "carplay"
+      ],
+      "alt": "Mercedes Classe A W176 : écran d'origine remplacé par un grand écran tactile avec CarPlay sans fil",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/porsche-macan-console.webp",
+      "photos": [],
+      "marque": "Porsche",
+      "titre": "Macan · Retrofit console centrale tactile",
+      "filtre": "porsche",
+      "prestations": [
+        "carplay"
+      ],
+      "alt": "Porsche Macan : console centrale tactile installée à la place des boutons d'origine",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/vw-golf7r.webp",
+      "photos": [
+        "assets/galerie/vw-golf7r-2.webp"
+      ],
+      "marque": "Volkswagen",
+      "titre": "Golf 7 R · CarPlay sur écran d'origine",
+      "filtre": "volkswagen",
+      "prestations": [
+        "carplay"
+      ],
+      "alt": "Volkswagen Golf 7 R : CarPlay et Android Auto sans fil intégrés à l'écran d'origine, sans modifier la planche de bord",
+      "format": "large"
+    },
+    {
+      "photo": "assets/galerie/mercedes-glc63s.webp",
+      "photos": [],
+      "marque": "Mercedes",
+      "titre": "GLC 63S AMG · Aérations lumineuses",
+      "filtre": "mercedes",
+      "prestations": [
+        "ambiance"
+      ],
+      "alt": "Mercedes GLC 63S AMG : aérations lumineuses d'origine activées, éclairage d'ambiance bleu",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/bmw-serie1-f20.webp",
+      "photos": [
+        "assets/galerie/bmw-serie1-f20-2.webp",
+        "assets/galerie/bmw-serie1-f20-3.webp"
+      ],
+      "marque": "BMW",
+      "titre": "Série 1 F20 · Retrofit écran grand format",
+      "filtre": "bmw",
+      "prestations": [
+        "carplay"
+      ],
+      "alt": "BMW Série 1 F20 : écran d'origine remplacé par un grand écran tactile compatible CarPlay",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/audi-rs3.webp",
+      "photos": [],
+      "marque": "Audi",
+      "titre": "RS3 8V · Transformation intérieure complète",
+      "filtre": "audi",
+      "prestations": [
+        "ambiance",
+        "carplay"
+      ],
+      "alt": "Audi RS3 8V : éclairage d'ambiance sur toute la planche de bord, CarPlay et caméra de recul",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/audi-a6.webp",
+      "photos": [
+        "assets/galerie/audi-a6-2.webp",
+        "assets/galerie/audi-a6-3.webp"
+      ],
+      "marque": "Audi",
+      "titre": "A6 · CarPlay sur écran d'origine",
+      "filtre": "audi",
+      "prestations": [
+        "carplay"
+      ],
+      "alt": "Audi A6 : CarPlay et Android Auto sans fil intégrés à l'écran MMI d'origine",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/audi-sq5.webp",
+      "photos": [],
+      "marque": "Audi",
+      "titre": "SQ5 · Retrofit multimédia",
+      "filtre": "audi",
+      "prestations": [
+        "ambiance",
+        "carplay"
+      ],
+      "alt": "Audi SQ5 : écran tactile nouvelle génération et éclairage d'ambiance complet",
+      "format": "normal"
+    },
+    {
       "photo": "assets/galerie/mercedes-glc.webp",
+      "photos": [],
       "marque": "Mercedes",
       "titre": "GLC 2019 · Retrofit intérieur complet",
       "filtre": "mercedes",
@@ -25,7 +148,35 @@
       "format": "normal"
     },
     {
+      "photo": "assets/galerie/bmw-serie1.webp",
+      "photos": [
+        "assets/galerie/bmw-serie1-2.webp",
+        "assets/galerie/bmw-serie1-3.webp"
+      ],
+      "marque": "BMW",
+      "titre": "Série 1 · CarPlay sur écran d'origine",
+      "filtre": "bmw",
+      "prestations": [
+        "carplay"
+      ],
+      "alt": "BMW Série 1 : CarPlay et Android Auto sans fil ajoutés sur l'écran iDrive d'origine",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/bmw-x3.webp",
+      "photos": [],
+      "marque": "BMW",
+      "titre": "X3 G01 · Éclairage d'ambiance intérieur",
+      "filtre": "bmw",
+      "prestations": [
+        "ambiance"
+      ],
+      "alt": "BMW X3 G01 : éclairage d'ambiance bleu sur la planche de bord et les contre-portes",
+      "format": "normal"
+    },
+    {
       "photo": "assets/galerie/porsche-macan.webp",
+      "photos": [],
       "marque": "Porsche",
       "titre": "Macan Turbo · Retrofit double écran",
       "filtre": "porsche",
@@ -36,18 +187,85 @@
       "format": "normal"
     },
     {
-      "photo": "assets/galerie/vw-golf7r.webp",
-      "marque": "Volkswagen",
-      "titre": "Golf 7 R · CarPlay sur écran d'origine",
-      "filtre": "volkswagen",
+      "photo": "assets/galerie/mercedes-gla-carplay.webp",
+      "photos": [
+        "assets/galerie/mercedes-gla-carplay-2.webp",
+        "assets/galerie/mercedes-gla-carplay-3.webp"
+      ],
+      "marque": "Mercedes",
+      "titre": "GLA · CarPlay sur écran d'origine",
+      "filtre": "mercedes",
       "prestations": [
         "carplay"
       ],
-      "alt": "Volkswagen Golf 7 R : CarPlay et Android Auto sans fil intégrés à l'écran d'origine, sans modifier la planche de bord",
-      "format": "large"
+      "alt": "Mercedes GLA : CarPlay et Android Auto sans fil ajoutés sur l'écran Comand d'origine",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/ds3.webp",
+      "photos": [],
+      "marque": "DS",
+      "titre": "DS 3 · CarPlay & Android Auto sans fil",
+      "filtre": "ds",
+      "prestations": [
+        "carplay"
+      ],
+      "alt": "DS 3 : écran CarPlay et Android Auto sans fil intégré à la console centrale",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/peugeot-308.webp",
+      "photos": [],
+      "marque": "Peugeot",
+      "titre": "308 (2025) · Éclairage d'ambiance intérieur",
+      "filtre": "peugeot",
+      "prestations": [
+        "ambiance"
+      ],
+      "alt": "Peugeot 308 de 2025 : éclairage d'ambiance bleu sur la planche de bord et la console",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/peugeot-208.webp",
+      "photos": [
+        "assets/galerie/peugeot-208-2.webp"
+      ],
+      "marque": "Peugeot",
+      "titre": "208 · CarPlay sur écran d'origine",
+      "filtre": "peugeot",
+      "prestations": [
+        "carplay"
+      ],
+      "alt": "Peugeot 208 : CarPlay et Android Auto ajoutés sur l'écran tactile d'origine",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/bmw-m235i.webp",
+      "photos": [],
+      "marque": "BMW",
+      "titre": "Série 2 M235i · CarPlay sur écran d'origine",
+      "filtre": "bmw",
+      "prestations": [
+        "carplay"
+      ],
+      "alt": "BMW Série 2 M235i : CarPlay et Android Auto sans fil intégrés à l'écran d'origine",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/audi-q3.webp",
+      "photos": [],
+      "marque": "Audi",
+      "titre": "Q3 2021 · Éclairage d'ambiance intérieur",
+      "filtre": "audi",
+      "prestations": [
+        "ambiance"
+      ],
+      "alt": "Audi Q3 2021 : liseré d'ambiance rouge courant sur la planche de bord et les contre-portes",
+      "format": "normal"
     },
     {
       "photo": "assets/galerie/audi-a3.webp",
+      "photos": [],
       "marque": "Audi",
       "titre": "A3 · Éclairage d'ambiance intérieur",
       "filtre": "audi",
@@ -59,6 +277,7 @@
     },
     {
       "photo": "assets/galerie/bmw-x6.webp",
+      "photos": [],
       "marque": "BMW",
       "titre": "X6 E71 · Transformation intérieure",
       "filtre": "bmw",
@@ -72,6 +291,7 @@
     },
     {
       "photo": "assets/galerie/mercedes-gla.webp",
+      "photos": [],
       "marque": "Mercedes",
       "titre": "GLA · Retrofit multimédia & ambiance",
       "filtre": "mercedes",
@@ -83,7 +303,32 @@
       "format": "normal"
     },
     {
+      "photo": "assets/galerie/bmw-serie7.webp",
+      "photos": [],
+      "marque": "BMW",
+      "titre": "Série 7 · CarPlay sur écran d'origine",
+      "filtre": "bmw",
+      "prestations": [
+        "carplay"
+      ],
+      "alt": "BMW Série 7 : CarPlay et Android Auto sans fil intégrés à l'écran d'origine",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/renault-clio4-rs.webp",
+      "photos": [],
+      "marque": "Renault",
+      "titre": "Clio 4 RS · Éclairage d'ambiance intérieur",
+      "filtre": "renault",
+      "prestations": [
+        "ambiance"
+      ],
+      "alt": "Renault Clio 4 RS : éclairage d'ambiance rouge sur la planche de bord et la console centrale",
+      "format": "normal"
+    },
+    {
       "photo": "assets/galerie/bmw-x1.webp",
+      "photos": [],
       "marque": "BMW",
       "titre": "X1 F48 · CarPlay & Android Auto sans fil",
       "filtre": "bmw",
@@ -94,7 +339,32 @@
       "format": "normal"
     },
     {
+      "photo": "assets/galerie/hyundai-i30n.webp",
+      "photos": [],
+      "marque": "Hyundai",
+      "titre": "i30 N · Éclairage d'ambiance intérieur",
+      "filtre": "hyundai",
+      "prestations": [
+        "ambiance"
+      ],
+      "alt": "Hyundai i30 N : liseré d'ambiance rouge courant sur toute la planche de bord",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/vw-scirocco.webp",
+      "photos": [],
+      "marque": "Volkswagen",
+      "titre": "Scirocco · Éclairage d'ambiance intérieur",
+      "filtre": "volkswagen",
+      "prestations": [
+        "ambiance"
+      ],
+      "alt": "Volkswagen Scirocco : éclairage d'ambiance violet sur la planche de bord et les planchers",
+      "format": "normal"
+    },
+    {
       "photo": "assets/galerie/audi-a1.webp",
+      "photos": [],
       "marque": "Audi",
       "titre": "A1 · Éclairage d'ambiance intérieur",
       "filtre": "audi",
@@ -106,6 +376,7 @@
     },
     {
       "photo": "assets/galerie/mercedes-classe-a-w177.webp",
+      "photos": [],
       "marque": "Mercedes",
       "titre": "Classe A W177 · Ambiance OEM",
       "filtre": "mercedes",
@@ -116,7 +387,44 @@
       "format": "normal"
     },
     {
+      "photo": "assets/galerie/dacia-duster.webp",
+      "photos": [],
+      "marque": "Dacia",
+      "titre": "Duster · Écran CarPlay & Android Auto",
+      "filtre": "dacia",
+      "prestations": [
+        "carplay"
+      ],
+      "alt": "Dacia Duster : écran tactile CarPlay et Android Auto installé sur la console centrale",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/vw-golf7.webp",
+      "photos": [],
+      "marque": "Volkswagen",
+      "titre": "Golf 7 · Éclairage d'ambiance intérieur",
+      "filtre": "volkswagen",
+      "prestations": [
+        "ambiance"
+      ],
+      "alt": "Volkswagen Golf 7 : tableau de bord rétroéclairé et LED intégrées dans les portières avant",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/mercedes-classe-a-w177-2.webp",
+      "photos": [],
+      "marque": "Mercedes",
+      "titre": "Classe A W177 · Extension de l'ambiance d'origine",
+      "filtre": "mercedes",
+      "prestations": [
+        "ambiance"
+      ],
+      "alt": "Mercedes Classe A W177 : aérations LED arrière, éclairage des portes arrière et bandes de sièges",
+      "format": "normal"
+    },
+    {
       "photo": "assets/galerie/vw-polo.webp",
+      "photos": [],
       "marque": "Volkswagen",
       "titre": "Polo 6 · Éclairage d'ambiance intérieur",
       "filtre": "volkswagen",
@@ -127,7 +435,20 @@
       "format": "normal"
     },
     {
+      "photo": "assets/galerie/renault-megane3.webp",
+      "photos": [],
+      "marque": "Renault",
+      "titre": "Mégane 3 · Éclairage d'ambiance intérieur",
+      "filtre": "renault",
+      "prestations": [
+        "ambiance"
+      ],
+      "alt": "Renault Mégane 3 : éclairage d'ambiance bleu sur la planche de bord et la console centrale",
+      "format": "normal"
+    },
+    {
       "photo": "assets/galerie/mercedes-cla.webp",
+      "photos": [],
       "marque": "Mercedes",
       "titre": "CLA · Éclairage d'ambiance intérieur",
       "filtre": "mercedes",
@@ -138,7 +459,32 @@
       "format": "normal"
     },
     {
+      "photo": "assets/galerie/skoda-fabia.webp",
+      "photos": [],
+      "marque": "Skoda",
+      "titre": "Fabia 2022 · Éclairage d'ambiance intérieur",
+      "filtre": "skoda",
+      "prestations": [
+        "ambiance"
+      ],
+      "alt": "Skoda Fabia de 2022 : liseré d'ambiance violet sur la planche de bord et les contre-portes",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/bmw-serie3-f31.webp",
+      "photos": [],
+      "marque": "BMW",
+      "titre": "Série 3 F31 · CarPlay sur écran d'origine",
+      "filtre": "bmw",
+      "prestations": [
+        "carplay"
+      ],
+      "alt": "BMW Série 3 F31 : CarPlay et Android Auto sans fil ajoutés sur l'écran d'origine",
+      "format": "normal"
+    },
+    {
       "photo": "assets/galerie/mercedes-slk.webp",
+      "photos": [],
       "marque": "Mercedes",
       "titre": "SLK · Éclairage d'ambiance intérieur",
       "filtre": "mercedes",
@@ -150,9 +496,10 @@
     },
     {
       "photo": "assets/galerie/opel-mokka.webp",
+      "photos": [],
       "marque": "Opel",
       "titre": "Mokka · Éclairage d'ambiance intérieur",
-      "filtre": "autres",
+      "filtre": "opel",
       "prestations": [
         "ambiance"
       ],
@@ -161,6 +508,7 @@
     },
     {
       "photo": "assets/galerie/mercedes-glc-ambiance.webp",
+      "photos": [],
       "marque": "Mercedes",
       "titre": "GLC · Éclairage d'ambiance rouge",
       "filtre": "mercedes",
@@ -172,6 +520,7 @@
     },
     {
       "photo": "assets/galerie/mercedes-classe-a.webp",
+      "photos": [],
       "marque": "Mercedes",
       "titre": "Classe A · Éclairage d'ambiance intérieur",
       "filtre": "mercedes",

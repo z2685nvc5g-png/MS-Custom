@@ -28,9 +28,21 @@ collections:
             collapsed: true
             fields:
               - name: photo
-                label: Photo
+                label: Photo principale
                 widget: image
-                hint: Photo de l'habitacle, sans l'interface Instagram. Format vertical de préférence.
+                hint: >-
+                  Celle qui s'affiche sur la vignette. Photo de l'habitacle, sans l'interface
+                  Instagram. Format vertical de préférence.
+
+              - name: photos
+                label: Photos supplémentaires
+                widget: list
+                required: false
+                field: { name: image, label: Photo, widget: image }
+                hint: >-
+                  Facultatif. Surtout utile pour le CarPlay - un gros plan de l'écran, et
+                  éventuellement le menu d'origine pour montrer qu'il est conservé.
+                  La vignette affichera alors une pastille avec le nombre de photos.
 
               - name: marque
                 label: Marque affichée
@@ -50,9 +62,21 @@ collections:
                   - { label: Mercedes, value: mercedes }
                   - { label: Audi, value: audi }
                   - { label: BMW, value: bmw }
-                  - { label: Porsche, value: porsche }
                   - { label: Volkswagen, value: volkswagen }
-                  - { label: Autres marques, value: autres }
+                  - { label: Porsche, value: porsche }
+                  - { label: Renault, value: renault }
+                  - { label: Peugeot, value: peugeot }
+                  - { label: Citroën, value: citroen }
+                  - { label: DS, value: ds }
+                  - { label: Dacia, value: dacia }
+                  - { label: Skoda, value: skoda }
+                  - { label: Seat, value: seat }
+                  - { label: Opel, value: opel }
+                  - { label: Hyundai, value: hyundai }
+                  - { label: Kia, value: kia }
+                  - { label: Toyota, value: toyota }
+                  - { label: Maserati, value: maserati }
+                  - { label: Lamborghini, value: lamborghini }
 
               - name: prestations
                 label: Prestations réalisées
@@ -63,6 +87,9 @@ collections:
                   - { label: Éclairage d'ambiance, value: ambiance }
                   - { label: CarPlay et écrans, value: carplay }
                   - { label: Compteur numérique, value: compteur }
+                hint: >-
+                  Le menu des marques du site se construit tout seul à partir de ce qui
+                  est présent en galerie. Une marque ajoutée ici y apparaît automatiquement.
 
               - name: alt
                 label: Description de la photo
@@ -80,6 +107,5 @@ collections:
                   - { label: Large (double largeur), value: large }
                   - { label: Mise en avant (grande tuile), value: vedette }
                 hint: >-
-                  Gardez une seule mise en avant. Pour que la mosaïque tombe juste,
-                  visez - 4 points pour la mise en avant, 2 par large, 1 par normale,
-                  et un total divisible par 3.
+                  Gardez une seule mise en avant et deux ou trois larges, en haut de liste.
+                  Le reste en normale. La grille se remplit toute seule, il n'y a plus de calcul à faire.
