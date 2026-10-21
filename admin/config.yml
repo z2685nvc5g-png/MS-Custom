@@ -44,6 +44,16 @@ collections:
                   éventuellement le menu d'origine pour montrer qu'il est conservé.
                   La vignette affichera alors une pastille avec le nombre de photos.
 
+              - name: video
+                label: Vidéo (facultatif)
+                widget: file
+                required: false
+                media_folder: /assets/video
+                public_folder: assets/video
+                hint: >-
+                  Une courte vidéo MP4, sans musique (les droits ne s'appliquent pas en dehors d'Instagram).
+                  Elle s'ouvre en premier dans la visionneuse. Restez sous 3 Mo.
+
               - name: marque
                 label: Marque affichée
                 widget: string
@@ -75,6 +85,7 @@ collections:
                   - { label: Hyundai, value: hyundai }
                   - { label: Kia, value: kia }
                   - { label: Toyota, value: toyota }
+                  - { label: Mini, value: mini }
                   - { label: Maserati, value: maserati }
                   - { label: Lamborghini, value: lamborghini }
 

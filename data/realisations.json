@@ -13,6 +13,31 @@
       "format": "vedette"
     },
     {
+      "photo": "assets/galerie/mercedes-cla-pro.webp",
+      "photos": [
+        "assets/galerie/mercedes-cla-pro-8.webp",
+        "assets/galerie/mercedes-cla-pro-3.webp",
+        "assets/galerie/mercedes-cla-pro-4.webp",
+        "assets/galerie/mercedes-cla-pro-5.webp",
+        "assets/galerie/mercedes-cla-pro-6.webp",
+        "assets/galerie/mercedes-cla-pro-7.webp",
+        "assets/galerie/mercedes-cla-pro-2.webp",
+        "assets/galerie/mercedes-cla-pro-9.webp"
+      ],
+      "marque": "Mercedes",
+      "titre": "CLA · Retrofit intérieur complet",
+      "filtre": "mercedes",
+      "prestations": [
+        "ambiance",
+        "carplay",
+        "compteur"
+      ],
+      "alt": "Mercedes CLA : compteur numérique, grand écran tactile CarPlay et Android Auto sans fil, aérations LED nouvelle génération et éclairage d'ambiance complet",
+      "format": "normal",
+      "video": "assets/video/mercedes-cla.mp4",
+      "poster": "assets/video/mercedes-cla-poster.webp"
+    },
+    {
       "photo": "assets/galerie/maserati-ghibli.webp",
       "photos": [],
       "marque": "Maserati",
@@ -37,6 +62,21 @@
         "carplay"
       ],
       "alt": "Mercedes Classe A W176 : écran d'origine remplacé par un grand écran tactile avec CarPlay sans fil",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/porsche-cayman-987.webp",
+      "photos": [
+        "assets/galerie/porsche-cayman-987-2.webp",
+        "assets/galerie/porsche-cayman-987-3.webp"
+      ],
+      "marque": "Porsche",
+      "titre": "Cayman 987 · Retrofit écran tactile & CarPlay",
+      "filtre": "porsche",
+      "prestations": [
+        "carplay"
+      ],
+      "alt": "Porsche Cayman 987 : écran d'origine remplacé par un écran tactile moderne avec CarPlay et Android Auto sans fil",
       "format": "normal"
     },
     {
@@ -66,6 +106,34 @@
       "format": "large"
     },
     {
+      "photo": "assets/galerie/bmw-serie5-gt.webp",
+      "photos": [
+        "assets/galerie/bmw-serie5-gt-2.webp"
+      ],
+      "marque": "BMW",
+      "titre": "Série 5 GT F07 · CarPlay sur écran d'origine",
+      "filtre": "bmw",
+      "prestations": [
+        "carplay"
+      ],
+      "alt": "BMW Série 5 GT F07 : CarPlay et Android Auto sans fil ajoutés sur l'écran d'origine",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/mini-cooper.webp",
+      "photos": [
+        "assets/galerie/mini-cooper-2.webp"
+      ],
+      "marque": "Mini",
+      "titre": "Cooper · CarPlay sur écran d'origine",
+      "filtre": "mini",
+      "prestations": [
+        "carplay"
+      ],
+      "alt": "Mini Cooper : CarPlay et Android Auto sans fil ajoutés sur l'écran rond d'origine",
+      "format": "normal"
+    },
+    {
       "photo": "assets/galerie/mercedes-glc63s.webp",
       "photos": [],
       "marque": "Mercedes",
@@ -75,6 +143,20 @@
         "ambiance"
       ],
       "alt": "Mercedes GLC 63S AMG : aérations lumineuses d'origine activées, éclairage d'ambiance bleu",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/bmw-m5-f10.webp",
+      "photos": [
+        "assets/galerie/bmw-m5-f10-2.webp"
+      ],
+      "marque": "BMW",
+      "titre": "M5 F10 · CarPlay sur écran d'origine",
+      "filtre": "bmw",
+      "prestations": [
+        "carplay"
+      ],
+      "alt": "BMW M5 F10 : CarPlay et Android Auto sans fil intégrés à l'écran d'origine, iDrive conservé",
       "format": "normal"
     },
     {
@@ -118,6 +200,35 @@
         "carplay"
       ],
       "alt": "Audi A6 : CarPlay et Android Auto sans fil intégrés à l'écran MMI d'origine",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/bmw-z4-e89.webp",
+      "photos": [
+        "assets/galerie/bmw-z4-e89-2.webp"
+      ],
+      "marque": "BMW",
+      "titre": "Z4 E89 · CarPlay sur écran d'origine",
+      "filtre": "bmw",
+      "prestations": [
+        "carplay"
+      ],
+      "alt": "BMW Z4 E89 : CarPlay et Android Auto sans fil ajoutés sur l'écran d'origine",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/renault-captur-2022.webp",
+      "photos": [
+        "assets/galerie/renault-captur-2022-2.webp",
+        "assets/galerie/renault-captur-2022-3.webp"
+      ],
+      "marque": "Renault",
+      "titre": "Captur 2022 · Éclairage d'ambiance intérieur",
+      "filtre": "renault",
+      "prestations": [
+        "ambiance"
+      ],
+      "alt": "Renault Captur 2022 : planche de bord rétroéclairée, éclairage des portières et des planchers",
       "format": "normal"
     },
     {
@@ -175,6 +286,34 @@
       "format": "normal"
     },
     {
+      "photo": "assets/galerie/peugeot-308-carplay.webp",
+      "photos": [
+        "assets/galerie/peugeot-308-carplay-2.webp"
+      ],
+      "marque": "Peugeot",
+      "titre": "308 · CarPlay sur écran d'origine",
+      "filtre": "peugeot",
+      "prestations": [
+        "carplay"
+      ],
+      "alt": "Peugeot 308 : CarPlay et Android Auto sans fil ajoutés sur l'écran tactile d'origine",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/peugeot-208-ambiance.webp",
+      "photos": [
+        "assets/galerie/peugeot-208-ambiance-2.webp"
+      ],
+      "marque": "Peugeot",
+      "titre": "208 · Éclairage d'ambiance intérieur",
+      "filtre": "peugeot",
+      "prestations": [
+        "ambiance"
+      ],
+      "alt": "Peugeot 208 : tableau de bord rétroéclairé et quatre éclairages de plancher",
+      "format": "normal"
+    },
+    {
       "photo": "assets/galerie/porsche-macan.webp",
       "photos": [],
       "marque": "Porsche",
@@ -223,6 +362,32 @@
         "ambiance"
       ],
       "alt": "Peugeot 308 de 2025 : éclairage d'ambiance bleu sur la planche de bord et la console",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/skoda-octavia.webp",
+      "photos": [
+        "assets/galerie/skoda-octavia-2.webp"
+      ],
+      "marque": "Skoda",
+      "titre": "Octavia · Retrofit écran tactile & CarPlay",
+      "filtre": "skoda",
+      "prestations": [
+        "carplay"
+      ],
+      "alt": "Skoda Octavia : écran d'origine remplacé par un écran tactile moderne avec CarPlay et Android Auto",
+      "format": "normal"
+    },
+    {
+      "photo": "assets/galerie/renault-captur-carplay.webp",
+      "photos": [],
+      "marque": "Renault",
+      "titre": "Captur · Écran CarPlay & Android Auto sans fil",
+      "filtre": "renault",
+      "prestations": [
+        "carplay"
+      ],
+      "alt": "Renault Captur : nouvel écran tactile avec CarPlay et Android Auto sans fil",
       "format": "normal"
     },
     {
@@ -328,7 +493,9 @@
     },
     {
       "photo": "assets/galerie/bmw-x1.webp",
-      "photos": [],
+      "photos": [
+        "assets/galerie/bmw-x1-2.webp"
+      ],
       "marque": "BMW",
       "titre": "X1 F48 · CarPlay & Android Auto sans fil",
       "filtre": "bmw",
